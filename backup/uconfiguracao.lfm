@@ -1,0 +1,683 @@
+object fConfiguracao: TfConfiguracao
+  Left = 186
+  Height = 398
+  Top = 152
+  Width = 1080
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Configuração Geral'
+  ClientHeight = 398
+  ClientWidth = 1080
+  KeyPreview = True
+  OnKeyPress = FormKeyPress
+  Position = poDesktopCenter
+  LCLVersion = '2.0.6.0'
+  object GroupBox1: TGroupBox
+    Left = -1
+    Height = 129
+    Top = 0
+    Width = 1073
+    Caption = '   Configuração dos CAGs    '
+    ClientHeight = 109
+    ClientWidth = 1069
+    TabOrder = 0
+    OnClick = GroupBox1Click
+    object DBEdit1: TDBEdit
+      Left = 6
+      Height = 23
+      Top = 32
+      Width = 257
+      DataField = 'NomeCAG1'
+      DataSource = Dm.DSCAGS
+      CharCase = ecUppercase
+      MaxLength = 20
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      Left = 6
+      Height = 15
+      Top = 16
+      Width = 104
+      Caption = 'Descrição do CAG 1'
+      ParentColor = False
+    end
+  end
+  object Label2: TLabel
+    Left = 278
+    Height = 15
+    Top = 32
+    Width = 104
+    Caption = 'Descrição do CAG 2'
+    ParentColor = False
+  end
+  object DBEdit2: TDBEdit
+    Left = 278
+    Height = 23
+    Top = 51
+    Width = 257
+    DataField = 'NomeCAG2'
+    DataSource = Dm.DSCAGS
+    CharCase = ecUppercase
+    MaxLength = 20
+    TabOrder = 10
+  end
+  object Label3: TLabel
+    Left = 543
+    Height = 15
+    Top = 32
+    Width = 104
+    Caption = 'Descrição do CAG 3'
+    ParentColor = False
+  end
+  object DBEdit3: TDBEdit
+    Left = 543
+    Height = 23
+    Top = 51
+    Width = 257
+    DataField = 'NomeCAG3'
+    DataSource = Dm.DSCAGS
+    CharCase = ecUppercase
+    MaxLength = 20
+    TabOrder = 14
+  end
+  object Label4: TLabel
+    Left = 806
+    Height = 15
+    Top = 32
+    Width = 104
+    Caption = 'Descrição do CAG 4'
+    ParentColor = False
+  end
+  object DBEdit4: TDBEdit
+    Left = 806
+    Height = 23
+    Top = 51
+    Width = 257
+    DataField = 'NomeCAG4'
+    DataSource = Dm.DSCAGS
+    CharCase = ecUppercase
+    MaxLength = 20
+    TabOrder = 18
+  end
+  object DBEdit5: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG1Botao1'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 1'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 96
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 2'
+    ParentColor = False
+  end
+  object DBEdit6: TDBEdit
+    Left = 96
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG1Botao2'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 8
+  end
+  object Label7: TLabel
+    Left = 184
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 3'
+    ParentColor = False
+  end
+  object DBEdit7: TDBEdit
+    Left = 184
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG1Botao3'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 9
+  end
+  object Label8: TLabel
+    Left = 278
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 1'
+    ParentColor = False
+  end
+  object DBEdit8: TDBEdit
+    Left = 278
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG2Botao1'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 11
+  end
+  object Label9: TLabel
+    Left = 366
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 2'
+    ParentColor = False
+  end
+  object DBEdit9: TDBEdit
+    Left = 366
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG2Botao2'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 12
+  end
+  object Label10: TLabel
+    Left = 454
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 3'
+    ParentColor = False
+  end
+  object DBEdit10: TDBEdit
+    Left = 454
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG2Botao3'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 13
+  end
+  object Label11: TLabel
+    Left = 543
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 1'
+    ParentColor = False
+  end
+  object DBEdit11: TDBEdit
+    Left = 543
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG3Botao1'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 15
+  end
+  object Label12: TLabel
+    Left = 631
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 2'
+    ParentColor = False
+  end
+  object DBEdit12: TDBEdit
+    Left = 631
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG3Botao2'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 16
+  end
+  object Label13: TLabel
+    Left = 719
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 3'
+    ParentColor = False
+  end
+  object DBEdit13: TDBEdit
+    Left = 719
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG3Botao3'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 17
+  end
+  object Label14: TLabel
+    Left = 808
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 1'
+    ParentColor = False
+  end
+  object DBEdit14: TDBEdit
+    Left = 808
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG4Botao1'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 19
+  end
+  object Label15: TLabel
+    Left = 896
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 2'
+    ParentColor = False
+  end
+  object DBEdit15: TDBEdit
+    Left = 896
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG4Botao2'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 20
+  end
+  object Label16: TLabel
+    Left = 984
+    Height = 15
+    Top = 80
+    Width = 62
+    Caption = 'Vol. Botão 3'
+    ParentColor = False
+  end
+  object DBEdit16: TDBEdit
+    Left = 984
+    Height = 23
+    Top = 96
+    Width = 79
+    DataField = 'ContCAG4Botao3'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 21
+  end
+  object GroupBox2: TGroupBox
+    Left = 7
+    Height = 184
+    Top = 136
+    Width = 1065
+    Caption = '  Configuração das Receitas     '
+    ClientHeight = 164
+    ClientWidth = 1061
+    TabOrder = 22
+    object Edit1: TEdit
+      Left = 8
+      Height = 23
+      Top = 40
+      Width = 205
+      CharCase = ecUppercase
+      TabOrder = 0
+      Text = 'EDIT1'
+    end
+    object DBEdit17: TDBEdit
+      Left = 216
+      Height = 23
+      Top = 40
+      Width = 38
+      DataField = 'Rceita1CAG1Ml'
+      DataSource = Dm.DSCAGS
+      Alignment = taRightJustify
+      CharCase = ecUppercase
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object Label17: TLabel
+      Left = 216
+      Height = 15
+      Top = 21
+      Width = 17
+      Caption = 'ML'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label18: TLabel
+      Left = 8
+      Height = 15
+      Top = 23
+      Width = 52
+      Caption = 'Receita 1'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Edit3: TEdit
+    Left = 18
+    Height = 23
+    Top = 224
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 2
+    Text = 'EDIT3'
+  end
+  object Edit4: TEdit
+    Left = 18
+    Height = 23
+    Top = 256
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 4
+    Text = 'EDIT4'
+  end
+  object Edit5: TEdit
+    Left = 18
+    Height = 23
+    Top = 284
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 6
+    Text = 'EDIT5'
+  end
+  object DBEdit19: TDBEdit
+    Left = 225
+    Height = 23
+    Top = 224
+    Width = 38
+    DataField = 'Rceita1CAG2Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object DBEdit20: TDBEdit
+    Left = 225
+    Height = 23
+    Top = 256
+    Width = 38
+    DataField = 'Rceita1CAG3Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 5
+  end
+  object DBEdit21: TDBEdit
+    Left = 225
+    Height = 23
+    Top = 284
+    Width = 38
+    DataField = 'Rceita1CAG4Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 7
+  end
+  object Label19: TLabel
+    Left = 280
+    Height = 15
+    Top = 176
+    Width = 52
+    Caption = 'Receita 2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 280
+    Height = 23
+    Top = 192
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 23
+    Text = 'EDIT2'
+  end
+  object Edit6: TEdit
+    Left = 280
+    Height = 23
+    Top = 224
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 24
+    Text = 'EDIT6'
+  end
+  object Edit7: TEdit
+    Left = 280
+    Height = 23
+    Top = 256
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 25
+    Text = 'EDIT7'
+  end
+  object Edit8: TEdit
+    Left = 280
+    Height = 23
+    Top = 284
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 26
+    Text = 'EDIT8'
+  end
+  object DBEdit18: TDBEdit
+    Left = 488
+    Height = 23
+    Top = 192
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 27
+  end
+  object DBEdit22: TDBEdit
+    Left = 488
+    Height = 23
+    Top = 224
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 28
+  end
+  object DBEdit23: TDBEdit
+    Left = 488
+    Height = 23
+    Top = 256
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 29
+  end
+  object DBEdit24: TDBEdit
+    Left = 488
+    Height = 23
+    Top = 284
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 30
+  end
+  object Label20: TLabel
+    Left = 488
+    Height = 15
+    Top = 176
+    Width = 17
+    Caption = 'ML'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit9: TEdit
+    Left = 544
+    Height = 23
+    Top = 192
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 31
+    Text = 'EDIT9'
+  end
+  object Edit10: TEdit
+    Left = 544
+    Height = 23
+    Top = 224
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 32
+    Text = 'EDIT10'
+  end
+  object Edit11: TEdit
+    Left = 544
+    Height = 23
+    Top = 256
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 33
+    Text = 'EDIT11'
+  end
+  object Edit12: TEdit
+    Left = 544
+    Height = 23
+    Top = 284
+    Width = 205
+    CharCase = ecUppercase
+    TabOrder = 34
+    Text = 'EDIT12'
+  end
+  object Label21: TLabel
+    Left = 543
+    Height = 15
+    Top = 176
+    Width = 52
+    Caption = 'Receita 3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object DBEdit25: TDBEdit
+    Left = 752
+    Height = 23
+    Top = 192
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 35
+  end
+  object DBEdit26: TDBEdit
+    Left = 752
+    Height = 23
+    Top = 224
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 36
+  end
+  object DBEdit27: TDBEdit
+    Left = 752
+    Height = 23
+    Top = 256
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 37
+  end
+  object DBEdit28: TDBEdit
+    Left = 752
+    Height = 23
+    Top = 284
+    Width = 38
+    DataField = 'Rceita1CAG1Ml'
+    DataSource = Dm.DSCAGS
+    Alignment = taRightJustify
+    CharCase = ecUppercase
+    MaxLength = 0
+    TabOrder = 38
+  end
+end

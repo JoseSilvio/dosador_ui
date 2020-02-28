@@ -1,0 +1,631 @@
+object Dm: TDm
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 431
+  VerticalOffset = 271
+  Width = 489
+  PPI = 96
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'ConfigGeral'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'D:\Sistemas\Lazarus\Dosador\libmysql.dll'
+    left = 40
+    top = 19
+  end
+  object TSQLCAGS: TZQuery
+    Connection = Conexao
+    Active = True
+    SQL.Strings = (
+      'Select * From tbCAGS'
+    )
+    Params = <>
+    Properties.Strings = (
+      'Select * From tbCAGS'
+    )
+    left = 176
+    top = 80
+    object TSQLCAGSNomeCAG1: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG1'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TSQLCAGSNomeCAG2: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG2'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TSQLCAGSNomeCAG3: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG3'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TSQLCAGSNomeCAG4: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG4'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TSQLCAGSContCAG1Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG1Botao1'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG1Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG1Botao2'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG1Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG1Botao3'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG2Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG2Botao1'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG2Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG2Botao2'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG2Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG2Botao3'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG3Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG3Botao1'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG3Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG3Botao2'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG3Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG3Botao3'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG4Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG4Botao1'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG4Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG4Botao2'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContCAG4Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG4Botao3'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSRceita1CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG1Ml'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita1CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG2Ml'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita1CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG3Ml'
+      Index = 18
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita1CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG4Ml'
+      Index = 19
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita2CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG1Ml'
+      Index = 20
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita2CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG2Ml'
+      Index = 21
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita2CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG3Ml'
+      Index = 22
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita2CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG4Ml'
+      Index = 23
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita3CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG1Ml'
+      Index = 24
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita3CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG2Ml'
+      Index = 25
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita3CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG3Ml'
+      Index = 26
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita3CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG4Ml'
+      Index = 27
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita4CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG1Ml'
+      Index = 28
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita4CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG2Ml'
+      Index = 29
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita4CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG3Ml'
+      Index = 30
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TSQLCAGSRceita4CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG4Ml'
+      Index = 31
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+  end
+  object TCAGS: TZTable
+    Connection = Conexao
+    Active = True
+    TableName = 'tbcags'
+    left = 24
+    top = 80
+    object TCAGSNomeCAG1: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG1'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TCAGSNomeCAG2: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG2'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TCAGSNomeCAG3: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG3'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TCAGSNomeCAG4: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeCAG4'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TCAGSContCAG1Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG1Botao1'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG1Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG1Botao2'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG1Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG1Botao3'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG2Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG2Botao1'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG2Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG2Botao2'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG2Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG2Botao3'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG3Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG3Botao1'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG3Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG3Botao2'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG3Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG3Botao3'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG4Botao1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG4Botao1'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG4Botao2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG4Botao2'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSContCAG4Botao3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContCAG4Botao3'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TCAGSRceita1CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG1Ml'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita1CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG2Ml'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita1CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG3Ml'
+      Index = 18
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita1CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita1CAG4Ml'
+      Index = 19
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita2CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG1Ml'
+      Index = 20
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita2CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG2Ml'
+      Index = 21
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita2CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG3Ml'
+      Index = 22
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita2CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita2CAG4Ml'
+      Index = 23
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita3CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG1Ml'
+      Index = 24
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita3CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG2Ml'
+      Index = 25
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita3CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG3Ml'
+      Index = 26
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita3CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita3CAG4Ml'
+      Index = 27
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita4CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG1Ml'
+      Index = 28
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita4CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG2Ml'
+      Index = 29
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita4CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG3Ml'
+      Index = 30
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TCAGSRceita4CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Rceita4CAG4Ml'
+      Index = 31
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+  end
+  object DSCAGS: TDataSource
+    AutoEdit = False
+    DataSet = TCAGS
+    left = 96
+    top = 80
+  end
+  object DSSQLCAGS: TDataSource
+    DataSet = TSQLCAGS
+    left = 256
+    top = 80
+  end
+end

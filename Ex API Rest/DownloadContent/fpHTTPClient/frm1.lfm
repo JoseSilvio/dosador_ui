@@ -1,0 +1,45 @@
+object Form1: TForm1
+  Left = 361
+  Height = 321
+  Top = 182
+  Width = 441
+  Caption = 'Download with fpHTTPClient'
+  ClientHeight = 321
+  ClientWidth = 441
+  LCLVersion = '2.0.6.0'
+  object Edit1: TEdit
+    Left = 15
+    Height = 23
+    Top = 17
+    Width = 409
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+    Text = '192.168.0.110/abre?canal=20'
+  end
+  object Button1: TButton
+    Left = 48
+    Height = 30
+    Top = 48
+    Width = 158
+    Caption = 'Download and Display'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 232
+    Height = 30
+    Top = 48
+    Width = 158
+    Caption = 'Download and Save'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 206
+    Top = 96
+    Width = 408
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 3
+  end
+end

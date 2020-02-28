@@ -1,0 +1,46 @@
+object Form1: TForm1
+  Left = 256
+  Height = 323
+  Top = 126
+  Width = 442
+  Caption = 'Download with Synapse'
+  ClientHeight = 323
+  ClientWidth = 442
+  LCLVersion = '2.0.0.4'
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 16
+    Width = 408
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+    Text = 'http://lazplanet.blogspot.com'
+  end
+  object Button1: TButton
+    Left = 40
+    Height = 34
+    Top = 46
+    Width = 175
+    Caption = 'Download and Display'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 224
+    Height = 34
+    Top = 46
+    Width = 175
+    Caption = 'Download and Save'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 209
+    Top = 96
+    Width = 408
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ScrollBars = ssAutoVertical
+    TabOrder = 3
+  end
+end
