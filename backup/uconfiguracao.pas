@@ -12,7 +12,6 @@ type
   { TfConfiguracao }
 
   TfConfiguracao = class(TForm)
-    DBEdit1: TDBEdit;
     DBEdit10: TDBEdit;
     DBEdit11: TDBEdit;
     DBEdit12: TDBEdit;
@@ -23,7 +22,6 @@ type
     DBEdit17: TDBEdit;
     DBEdit18: TDBEdit;
     DBEdit19: TDBEdit;
-    DBEdit2: TDBEdit;
     DBEdit20: TDBEdit;
     DBEdit21: TDBEdit;
     DBEdit22: TDBEdit;
@@ -34,7 +32,6 @@ type
     DBEdit27: TDBEdit;
     DBEdit28: TDBEdit;
     DBEdit29: TDBEdit;
-    DBEdit3: TDBEdit;
     DBEdit30: TDBEdit;
     DBEdit31: TDBEdit;
     DBEdit32: TDBEdit;
@@ -45,7 +42,6 @@ type
     DBEdit37: TDBEdit;
     DBEdit38: TDBEdit;
     DBEdit39: TDBEdit;
-    DBEdit4: TDBEdit;
     DBEdit40: TDBEdit;
     DBEdit5: TDBEdit;
     DBEdit6: TDBEdit;
@@ -60,7 +56,11 @@ type
     Edit14: TEdit;
     Edit15: TEdit;
     Edit16: TEdit;
+    Edit17: TEdit;
+    Edit18: TEdit;
+    Edit19: TEdit;
     Edit2: TEdit;
+    Edit20: TEdit;
     Edit3: TEdit;
     Edit4: TEdit;
     Edit5: TEdit;
@@ -179,33 +179,36 @@ end;
 procedure TfConfiguracao.FormActivate(Sender: TObject);
 begin
 
-  DbEdit1.SetFocus ;
+  Edit1.Text := Dm.NomeCAG1 ;
+  Edit3.Text := Dm.NomeCAG2 ;
+  Edit4.Text := Dm.NomeCAG3 ;
+  Edit5.Text := Dm.NomeCAG4 ;
 
-  Edit1.Text := Dm.TCAGSNomeCAG1.AsString ;
-  Edit3.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit4.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit5.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit2.Text := Dm.NomeCAG1 ;
+  Edit6.Text := Dm.NomeCAG2 ;
+  Edit7.Text := Dm.NomeCAG3 ;
+  Edit8.Text := Dm.NomeCAG4 ;
 
-  Edit2.Text := Dm.TCAGSNomeCAG1.AsString ;
-  Edit6.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit7.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit8.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit9.Text  := Dm.NomeCAG1 ;
+  Edit10.Text := Dm.NomeCAG2 ;
+  Edit11.Text := Dm.NomeCAG3 ;
+  Edit12.Text := Dm.NomeCAG4 ;
 
-  Edit9.Text  := Dm.TCAGSNomeCAG1.AsString ;
-  Edit10.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit11.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit12.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit13.Text := Dm.NomeCAG1 ;
+  Edit14.Text := Dm.NomeCAG2 ;
+  Edit15.Text := Dm.NomeCAG3 ;
+  Edit16.Text := Dm.NomeCAG4 ;
 
-  Edit13.Text := Dm.TCAGSNomeCAG1.AsString ;
-  Edit14.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit15.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit16.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit17.Text := Dm.NomeCAG1 ;
+  Edit18.Text := Dm.NomeCAG2 ;
+  Edit19.Text := Dm.NomeCAG3 ;
+  Edit20.Text := Dm.NomeCAG4 ;
 
 end;
 
 procedure TfConfiguracao.DBEdit17Exit(Sender: TObject);
 begin
- TestarConteudo(StrToInt(DbEdit17.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit17) ;
+ TestarConteudo(StrToInt(DbEdit17.Text), StrToInt(DbEdit7.Text), Edit17, DbEdit17) ;
 end;
 
 procedure TfConfiguracao.DBEdit18Exit(Sender: TObject);
@@ -286,7 +289,7 @@ end;
 procedure TfConfiguracao.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
-  Dm.TCAGS.Post ;
+  //Dm.TCAGS.Post ;
   fPrincipal.OnActivate(Self);
 end;
 

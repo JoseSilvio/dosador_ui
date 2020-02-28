@@ -227,17 +227,17 @@ begin
  btnLiq1_doseB1.Caption := Dm.ContCAG2Botao2 + 'ml' ;
  btnLiq1_doseC1.Caption := Dm.ContCAG2Botao3 + 'ml' ;
 
- btnLiq1_doseA2.Caption := Dm.ContCAG3Botao1.AsString + 'ml' ;
- btnLiq1_doseB2.Caption := Dm.ContCAG3Botao2.AsString + 'ml' ;
- btnLiq1_doseC2.Caption := Dm.ContCAG3Botao3.AsString + 'ml';
+ btnLiq1_doseA2.Caption := Dm.ContCAG3Botao1 + 'ml' ;
+ btnLiq1_doseB2.Caption := Dm.ContCAG3Botao2 + 'ml' ;
+ btnLiq1_doseC2.Caption := Dm.ContCAG3Botao3 + 'ml';
 
- btnLiq1_doseA3.Caption := Dm.ContCAG4Botao1.AsString  + 'ml';
- btnLiq1_doseB3.Caption := Dm.ContCAG4Botao2.AsString  + 'ml';
- btnLiq1_doseC3.Caption := Dm.ContCAG4Botao3.AsString  + 'ml';
+ btnLiq1_doseA3.Caption := Dm.ContCAG4Botao1 + 'ml';
+ btnLiq1_doseB3.Caption := Dm.ContCAG4Botao2 + 'ml';
+ btnLiq1_doseC3.Caption := Dm.ContCAG4Botao3 + 'ml';
 
- btnLiq1_doseA4.Caption := Dm.NomeReceitaB1.AsString  ;
- btnLiq1_doseB4.Caption := Dm.NomeReceitaB2.AsString  ;
- btnLiq1_doseC4.Caption := Dm.NomeReceitaB3.AsString  ;
+ btnLiq1_doseA4.Caption := Dm.NomeReceitaB1 ;
+ btnLiq1_doseB4.Caption := Dm.NomeReceitaB2 ;
+ btnLiq1_doseC4.Caption := Dm.NomeReceitaB3 ;
 
 end;
 

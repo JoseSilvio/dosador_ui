@@ -12,7 +12,6 @@ type
   { TfConfiguracao }
 
   TfConfiguracao = class(TForm)
-    DBEdit1: TDBEdit;
     DBEdit10: TDBEdit;
     DBEdit11: TDBEdit;
     DBEdit12: TDBEdit;
@@ -23,7 +22,6 @@ type
     DBEdit17: TDBEdit;
     DBEdit18: TDBEdit;
     DBEdit19: TDBEdit;
-    DBEdit2: TDBEdit;
     DBEdit20: TDBEdit;
     DBEdit21: TDBEdit;
     DBEdit22: TDBEdit;
@@ -34,7 +32,6 @@ type
     DBEdit27: TDBEdit;
     DBEdit28: TDBEdit;
     DBEdit29: TDBEdit;
-    DBEdit3: TDBEdit;
     DBEdit30: TDBEdit;
     DBEdit31: TDBEdit;
     DBEdit32: TDBEdit;
@@ -45,7 +42,6 @@ type
     DBEdit37: TDBEdit;
     DBEdit38: TDBEdit;
     DBEdit39: TDBEdit;
-    DBEdit4: TDBEdit;
     DBEdit40: TDBEdit;
     DBEdit5: TDBEdit;
     DBEdit6: TDBEdit;
@@ -60,7 +56,11 @@ type
     Edit14: TEdit;
     Edit15: TEdit;
     Edit16: TEdit;
+    Edit17: TEdit;
+    Edit18: TEdit;
+    Edit19: TEdit;
     Edit2: TEdit;
+    Edit20: TEdit;
     Edit3: TEdit;
     Edit4: TEdit;
     Edit5: TEdit;
@@ -179,108 +179,111 @@ end;
 procedure TfConfiguracao.FormActivate(Sender: TObject);
 begin
 
-  DbEdit1.SetFocus ;
+  Edit1.Text := Dm.NomeCAG1 ;
+  Edit3.Text := Dm.NomeCAG2 ;
+  Edit4.Text := Dm.NomeCAG3 ;
+  Edit5.Text := Dm.NomeCAG4 ;
 
-  Edit1.Text := Dm.TCAGSNomeCAG1.AsString ;
-  Edit3.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit4.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit5.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit2.Text := Dm.NomeCAG1 ;
+  Edit6.Text := Dm.NomeCAG2 ;
+  Edit7.Text := Dm.NomeCAG3 ;
+  Edit8.Text := Dm.NomeCAG4 ;
 
-  Edit2.Text := Dm.TCAGSNomeCAG1.AsString ;
-  Edit6.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit7.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit8.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit9.Text  := Dm.NomeCAG1 ;
+  Edit10.Text := Dm.NomeCAG2 ;
+  Edit11.Text := Dm.NomeCAG3 ;
+  Edit12.Text := Dm.NomeCAG4 ;
 
-  Edit9.Text  := Dm.TCAGSNomeCAG1.AsString ;
-  Edit10.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit11.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit12.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit13.Text := Dm.NomeCAG1 ;
+  Edit14.Text := Dm.NomeCAG2 ;
+  Edit15.Text := Dm.NomeCAG3 ;
+  Edit16.Text := Dm.NomeCAG4 ;
 
-  Edit13.Text := Dm.TCAGSNomeCAG1.AsString ;
-  Edit14.Text := Dm.TCAGSNomeCAG2.AsString ;
-  Edit15.Text := Dm.TCAGSNomeCAG3.AsString ;
-  Edit16.Text := Dm.TCAGSNomeCAG4.AsString ;
+  Edit17.Text := Dm.NomeCAG1 ;
+  Edit18.Text := Dm.NomeCAG2 ;
+  Edit19.Text := Dm.NomeCAG3 ;
+  Edit20.Text := Dm.NomeCAG4 ;
 
 end;
 
 procedure TfConfiguracao.DBEdit17Exit(Sender: TObject);
 begin
- TestarConteudo(StrToInt(DbEdit17.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit17) ;
+ TestarConteudo(StrToInt(DbEdit17.Text), StrToInt(DbEdit7.Text), Edit17, DbEdit17) ;
 end;
 
 procedure TfConfiguracao.DBEdit18Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit18.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit18) ;
+  TestarConteudo(StrToInt(DbEdit18.Text), StrToInt(DbEdit10.Text), Edit18, DbEdit18) ;
 end;
 
 procedure TfConfiguracao.DBEdit19Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit19.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit19) ;
+  TestarConteudo(StrToInt(DbEdit19.Text), StrToInt(DbEdit13.Text), Edit19, DbEdit19) ;
 end;
 
 procedure TfConfiguracao.DBEdit20Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit20.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit20) ;
+  TestarConteudo(StrToInt(DbEdit20.Text), StrToInt(DbEdit16.Text), Edit20, DbEdit20) ;
 end;
 
 procedure TfConfiguracao.DBEdit21Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit21.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit21) ;
+  TestarConteudo(StrToInt(DbEdit21.Text), StrToInt(DbEdit7.Text), Edit17, DbEdit21) ;
 end;
 
 procedure TfConfiguracao.DBEdit22Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit22.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit22) ;
+  TestarConteudo(StrToInt(DbEdit22.Text), StrToInt(DbEdit10.Text), Edit18, DbEdit22) ;
 end;
 
 procedure TfConfiguracao.DBEdit23Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit23.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit23) ;
+  TestarConteudo(StrToInt(DbEdit23.Text), StrToInt(DbEdit13.Text), Edit19, DbEdit23) ;
 end;
 
 procedure TfConfiguracao.DBEdit24Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit24.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit24) ;
+  TestarConteudo(StrToInt(DbEdit24.Text), StrToInt(DbEdit16.Text), Edit20, DbEdit24) ;
 end;
 
 procedure TfConfiguracao.DBEdit25Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit25.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit25) ;
+  TestarConteudo(StrToInt(DbEdit25.Text), StrToInt(DbEdit7.Text), Edit17, DbEdit25) ;
 end;
 
 procedure TfConfiguracao.DBEdit26Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit26.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit26) ;
+  TestarConteudo(StrToInt(DbEdit26.Text), StrToInt(DbEdit10.Text), Edit18, DbEdit26) ;
 end;
 
 procedure TfConfiguracao.DBEdit27Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit27.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit27) ;
+  TestarConteudo(StrToInt(DbEdit27.Text), StrToInt(DbEdit13.Text), Edit19, DbEdit27) ;
 end;
 
 procedure TfConfiguracao.DBEdit28Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit28.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit28) ;
+  TestarConteudo(StrToInt(DbEdit28.Text), StrToInt(DbEdit16.Text), Edit20, DbEdit28) ;
 end;
 
 procedure TfConfiguracao.DBEdit29Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit29.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit29) ;
+  TestarConteudo(StrToInt(DbEdit29.Text), StrToInt(DbEdit7.Text), Edit17, DbEdit29) ;
 end;
 
 procedure TfConfiguracao.DBEdit30Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit30.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit30) ;
+  TestarConteudo(StrToInt(DbEdit30.Text), StrToInt(DbEdit10.Text), Edit18, DbEdit30) ;
 end;
 
 procedure TfConfiguracao.DBEdit31Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit31.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit31) ;
+  TestarConteudo(StrToInt(DbEdit31.Text), StrToInt(DbEdit13.Text), Edit19, DbEdit31) ;
 end;
 
 procedure TfConfiguracao.DBEdit32Exit(Sender: TObject);
 begin
-  TestarConteudo(StrToInt(DbEdit32.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit32) ;
+  TestarConteudo(StrToInt(DbEdit32.Text), StrToInt(DbEdit16.Text), Edit20, DbEdit32) ;
 end;
 
 procedure TfConfiguracao.FormClose(Sender: TObject;

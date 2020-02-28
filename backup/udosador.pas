@@ -214,18 +214,18 @@ end;
 procedure TfPrincipal.FormActivate(Sender: TObject);
 begin
 
- grpLiquido1.Caption := '  ' + Dm.NomeCAG1.AsString + '    ' ;
- grpLiquido2.Caption := '  ' + Dm.NomeCAG2.AsString + '    ' ;
- grpLiquido3.Caption := '  ' + Dm.NomeCAG3.AsString + '    ' ;
- grpLiquido4.Caption := '  ' + Dm.NomeCAG4.AsString + '    ' ;
+ grpLiquido1.Caption := '  ' + Dm.NomeCAG1 + '    ' ;
+ grpLiquido2.Caption := '  ' + Dm.NomeCAG2 + '    ' ;
+ grpLiquido3.Caption := '  ' + Dm.NomeCAG3 + '    ' ;
+ grpLiquido4.Caption := '  ' + Dm.NomeCAG4 + '    ' ;
 
- btnLiq1_doseA.Caption := Dm.ContCAG1Botao1.AsString + 'ml' ;
- btnLiq1_doseB.Caption := Dm.ContCAG1Botao2.AsString + 'ml' ;
- btnLiq1_doseC.Caption := Dm.ContCAG1Botao3.AsString + 'ml';
+ btnLiq1_doseA.Caption := Dm.ContCAG1Botao1 + 'ml' ;
+ btnLiq1_doseB.Caption := Dm.ContCAG1Botao2 + 'ml' ;
+ btnLiq1_doseC.Caption := Dm.ContCAG1Botao3 + 'ml';
 
- btnLiq1_doseA1.Caption := Dm.ContCAG2Botao1.AsString + 'ml' ;
- btnLiq1_doseB1.Caption := Dm.ContCAG2Botao2.AsString + 'ml' ;
- btnLiq1_doseC1.Caption := Dm.SContCAG2Botao3.AsString + 'ml' ;
+ btnLiq1_doseA1.Caption := Dm.ContCAG2Botao1 + 'ml' ;
+ btnLiq1_doseB1.Caption := Dm.ContCAG2Botao2 + 'ml' ;
+ btnLiq1_doseC1.Caption := Dm.ContCAG2Botao3 + 'ml' ;
 
  btnLiq1_doseA2.Caption := Dm.ContCAG3Botao1.AsString + 'ml' ;
  btnLiq1_doseB2.Caption := Dm.ContCAG3Botao2.AsString + 'ml' ;
