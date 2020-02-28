@@ -1,12 +1,13 @@
 object fPrincipal: TfPrincipal
-  Left = 90
+  Left = 87
   Height = 538
-  Top = 94
-  Width = 1178
+  Top = 101
+  Width = 1218
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Recife Mecatron - Dosador de Líquidos'
   ClientHeight = 538
-  ClientWidth = 1178
+  ClientWidth = 1218
+  OnActivate = FormActivate
   OnCreate = FormCreate
   Position = poDesktopCenter
   LCLVersion = '2.0.6.0'
@@ -14,7 +15,7 @@ object fPrincipal: TfPrincipal
     Left = 0
     Height = 56
     Top = 0
-    Width = 1178
+    Width = 1218
     Align = alTop
     Caption = 'Recife Mecatron'
     Color = clGradientActiveCaption
@@ -31,7 +32,7 @@ object fPrincipal: TfPrincipal
     OnClick = Panel1Click
   end
   object grpLiquido1: TGroupBox
-    Left = 16
+    Left = 8
     Height = 391
     Top = 80
     Width = 225
@@ -449,7 +450,7 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseAClick
+      OnClick = hhhh
       ParentFont = False
       TabOrder = 0
     end
@@ -1264,8 +1265,8 @@ object fPrincipal: TfPrincipal
       TabOrder = 2
     end
   end
-  object GroupBox1: TGroupBox
-    Left = 248
+  object grpLiquido2: TGroupBox
+    Left = 240
     Height = 392
     Top = 80
     Width = 225
@@ -1681,14 +1682,14 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseAClick
+      OnClick = btnLiq1_doseA1Click
       ParentFont = False
       TabOrder = 0
     end
     object btnLiq1_doseB1: TBitBtn
       Left = 26
       Height = 89
-      Top = 137
+      Top = 138
       Width = 169
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
@@ -2086,12 +2087,12 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseBClick
+      OnClick = btnLiq1_doseB1Click
       ParentFont = False
       TabOrder = 1
     end
     object btnLiq1_doseC1: TBitBtn
-      Left = 26
+      Left = 24
       Height = 89
       Top = 233
       Width = 169
@@ -2491,13 +2492,13 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseCClick
+      OnClick = btnLiq1_doseC1Click
       ParentFont = False
       TabOrder = 2
     end
   end
-  object GroupBox2: TGroupBox
-    Left = 480
+  object grpLiquido3: TGroupBox
+    Left = 472
     Height = 392
     Top = 80
     Width = 225
@@ -2913,7 +2914,7 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseAClick
+      OnClick = btnLiq1_doseA2Click
       ParentFont = False
       TabOrder = 0
     end
@@ -3318,7 +3319,7 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseBClick
+      OnClick = btnLiq1_doseB2Click
       ParentFont = False
       TabOrder = 1
     end
@@ -3723,13 +3724,13 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseCClick
+      OnClick = btnLiq1_doseC2Click
       ParentFont = False
       TabOrder = 2
     end
   end
-  object GroupBox3: TGroupBox
-    Left = 712
+  object grpLiquido4: TGroupBox
+    Left = 704
     Height = 391
     Top = 81
     Width = 225
@@ -3746,7 +3747,7 @@ object fPrincipal: TfPrincipal
     TabOrder = 4
     object btnLiq1_doseA3: TBitBtn
       Left = 24
-      Height = 89
+      Height = 88
       Top = 40
       Width = 169
       Caption = '80ml'
@@ -4145,14 +4146,14 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseAClick
+      OnClick = btnLiq1_doseA3Click
       ParentFont = False
       TabOrder = 0
     end
     object btnLiq1_doseB3: TBitBtn
       Left = 24
       Height = 89
-      Top = 137
+      Top = 135
       Width = 169
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
@@ -4550,7 +4551,7 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseBClick
+      OnClick = btnLiq1_doseB3Click
       ParentFont = False
       TabOrder = 1
     end
@@ -4955,20 +4956,20 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseCClick
+      OnClick = btnLiq1_doseC3Click
       ParentFont = False
       TabOrder = 2
     end
   end
-  object GroupBox4: TGroupBox
-    Left = 944
+  object grpReceitas: TGroupBox
+    Left = 936
     Height = 391
     Top = 80
-    Width = 225
-    Caption = 'CAG 4'
+    Width = 272
+    Caption = '  Receitas    '
     ClientHeight = 356
-    ClientWidth = 221
-    Color = clGradientInactiveCaption
+    ClientWidth = 268
+    Color = clGradientActiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -21
@@ -4977,13 +4978,13 @@ object fPrincipal: TfPrincipal
     ParentFont = False
     TabOrder = 5
     object btnLiq1_doseA4: TBitBtn
-      Left = 24
-      Height = 89
-      Top = 40
-      Width = 169
+      Left = 2
+      Height = 90
+      Top = 41
+      Width = 264
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
-      Font.Color = clGreen
+      Font.Color = clBlack
       Font.Height = -24
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
@@ -5377,18 +5378,19 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseAClick
+      OnClick = btnLiq1_doseA4Click
+      ParentBidiMode = False
       ParentFont = False
       TabOrder = 0
     end
     object btnLiq1_doseB4: TBitBtn
-      Left = 24
-      Height = 89
-      Top = 137
-      Width = 169
+      Left = 2
+      Height = 90
+      Top = 136
+      Width = 264
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
-      Font.Color = clNavy
+      Font.Color = clOlive
       Font.Height = -24
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
@@ -5782,18 +5784,18 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseBClick
+      OnClick = btnLiq1_doseB4Click
       ParentFont = False
       TabOrder = 1
     end
     object btnLiq1_doseC4: TBitBtn
-      Left = 24
-      Height = 89
+      Left = 2
+      Height = 86
       Top = 233
-      Width = 169
+      Width = 264
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
-      Font.Color = clMaroon
+      Font.Color = clTeal
       Font.Height = -24
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
@@ -6187,13 +6189,13 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = btnLiq1_doseCClick
+      OnClick = btnLiq1_doseC4Click
       ParentFont = False
       TabOrder = 2
     end
   end
   object SpeedButton1: TSpeedButton
-    Left = 16
+    Left = 8
     Height = 43
     Top = 480
     Width = 279

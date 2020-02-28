@@ -1,4 +1,5 @@
 object Dm: TDm
+  OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 150
   HorizontalOffset = 431
@@ -9,16 +10,15 @@ object Dm: TDm
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = True
     Properties.Strings = (
-      'AutoEncodeStrings='
+      'AutoEncodeStrings=ON'
     )
-    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'ConfigGeral'
     User = 'root'
     Protocol = 'mysql-5'
     LibraryLocation = 'D:\Sistemas\Lazarus\Dosador\libmysql.dll'
-    left = 40
+    left = 32
     top = 19
   end
   object TSQLCAGS: TZQuery
@@ -176,160 +176,235 @@ object Dm: TDm
       ReadOnly = False
       Required = False
     end
-  end
-  object TCAGS: TZTable
-    Connection = Conexao
-    TableName = 'tbcags'
-    left = 24
-    top = 80
-    object TCAGSNomeCAG1: TStringField
+    object TSQLCAGSReceita1CAG1Ml: TLongintField
       FieldKind = fkData
-      FieldName = 'NomeCAG1'
-      Index = 0
+      FieldName = 'Receita1CAG1Ml'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita1CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita1CAG2Ml'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita1CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita1CAG3Ml'
+      Index = 18
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita1CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita1CAG4Ml'
+      Index = 19
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita2CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita2CAG1Ml'
+      Index = 20
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita2CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita2CAG2Ml'
+      Index = 21
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita2CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita2CAG3Ml'
+      Index = 22
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita2CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita2CAG4Ml'
+      Index = 23
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita3CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita3CAG1Ml'
+      Index = 24
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita3CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita3CAG2Ml'
+      Index = 25
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita3CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita3CAG3Ml'
+      Index = 26
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita3CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita3CAG4Ml'
+      Index = 27
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita4CAG1Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita4CAG1Ml'
+      Index = 28
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita4CAG2Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita4CAG2Ml'
+      Index = 29
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita4CAG3Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita4CAG3Ml'
+      Index = 30
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSReceita4CAG4Ml: TLongintField
+      FieldKind = fkData
+      FieldName = 'Receita4CAG4Ml'
+      Index = 31
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSNomeReceitaB1: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeReceitaB1'
+      Index = 32
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = True
     end
-    object TCAGSNomeCAG2: TStringField
+    object TSQLCAGSNomeReceitaB2: TStringField
       FieldKind = fkData
-      FieldName = 'NomeCAG2'
-      Index = 1
+      FieldName = 'NomeReceitaB2'
+      Index = 33
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = True
     end
-    object TCAGSNomeCAG3: TStringField
+    object TSQLCAGSNomeReceitaB3: TStringField
       FieldKind = fkData
-      FieldName = 'NomeCAG3'
-      Index = 2
+      FieldName = 'NomeReceitaB3'
+      Index = 34
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = True
     end
-    object TCAGSNomeCAG4: TStringField
+    object TSQLCAGSContReceitaB1: TLongintField
       FieldKind = fkData
-      FieldName = 'NomeCAG4'
-      Index = 3
+      FieldName = 'ContReceitaB1'
+      Index = 35
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContReceitaB2: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContReceitaB2'
+      Index = 36
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSContReceitaB3: TLongintField
+      FieldKind = fkData
+      FieldName = 'ContReceitaB3'
+      Index = 37
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TSQLCAGSLink: TStringField
+      FieldKind = fkData
+      FieldName = 'Link'
+      Index = 38
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = True
+      Size = 500
     end
-    object TCAGSContCAG1Botao1: TLongintField
+    object TSQLCAGSContReceitaB4: TLongintField
       FieldKind = fkData
-      FieldName = 'ContCAG1Botao1'
-      Index = 4
+      FieldName = 'ContReceitaB4'
+      Index = 39
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
+      ReadOnly = True
       Required = False
     end
-    object TCAGSContCAG1Botao2: TLongintField
+    object TSQLCAGSNomeReceitaB4: TStringField
       FieldKind = fkData
-      FieldName = 'ContCAG1Botao2'
-      Index = 5
+      FieldName = 'NomeReceitaB4'
+      Index = 40
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG1Botao3: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG1Botao3'
-      Index = 6
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG2Botao1: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG2Botao1'
-      Index = 7
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG2Botao2: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG2Botao2'
-      Index = 8
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG2Botao3: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG2Botao3'
-      Index = 9
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG3Botao1: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG3Botao1'
-      Index = 10
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG3Botao2: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG3Botao2'
-      Index = 11
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG3Botao3: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG3Botao3'
-      Index = 12
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG4Botao1: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG4Botao1'
-      Index = 13
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG4Botao2: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG4Botao2'
-      Index = 14
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
-      Required = False
-    end
-    object TCAGSContCAG4Botao3: TLongintField
-      FieldKind = fkData
-      FieldName = 'ContCAG4Botao3'
-      Index = 15
-      LookupCache = False
-      ProviderFlags = [pfInUpdate, pfInWhere]
-      ReadOnly = False
+      ReadOnly = True
       Required = False
     end
   end
   object DSCAGS: TDataSource
     AutoEdit = False
-    DataSet = TCAGS
     left = 96
     top = 80
   end

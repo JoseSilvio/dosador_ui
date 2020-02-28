@@ -5,7 +5,7 @@ unit uConfiguracao;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls, UDm;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls;
 
 type
 
@@ -38,7 +38,15 @@ type
     DBEdit30: TDBEdit;
     DBEdit31: TDBEdit;
     DBEdit32: TDBEdit;
+    DBEdit33: TDBEdit;
+    DBEdit34: TDBEdit;
+    DBEdit35: TDBEdit;
+    DBEdit36: TDBEdit;
+    DBEdit37: TDBEdit;
+    DBEdit38: TDBEdit;
+    DBEdit39: TDBEdit;
     DBEdit4: TDBEdit;
+    DBEdit40: TDBEdit;
     DBEdit5: TDBEdit;
     DBEdit6: TDBEdit;
     DBEdit7: TDBEdit;
@@ -79,15 +87,44 @@ type
     Label22: TLabel;
     Label23: TLabel;
     Label24: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label27: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
     Label3: TLabel;
+    Label30: TLabel;
+    Label31: TLabel;
+    Label32: TLabel;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
+    procedure DBEdit17Exit(Sender: TObject);
+    procedure DBEdit18Exit(Sender: TObject);
+    procedure DBEdit19Exit(Sender: TObject);
+    procedure DBEdit20Exit(Sender: TObject);
+    procedure DBEdit21Exit(Sender: TObject);
+    procedure DBEdit22Exit(Sender: TObject);
+    procedure DBEdit23Exit(Sender: TObject);
+    procedure DBEdit24Exit(Sender: TObject);
+    procedure DBEdit25Exit(Sender: TObject);
+    procedure DBEdit26Exit(Sender: TObject);
+    procedure DBEdit27Exit(Sender: TObject);
+    procedure DBEdit28Exit(Sender: TObject);
+    procedure DBEdit29Exit(Sender: TObject);
+    procedure DBEdit30Exit(Sender: TObject);
+    procedure DBEdit31Exit(Sender: TObject);
+    procedure DBEdit32Exit(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormCreate(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: char);
     procedure GroupBox1Click(Sender: TObject);
+    procedure GroupBox2Click(Sender: TObject);
+    Function TestarConteudo(VolReceita : Integer ; VolMaximo : Integer ; ObjDesc : TObject ; ObjFoco : TObject): string;
   private
 
   public
@@ -99,11 +136,29 @@ var
 
 implementation
 
+Uses UDm, UDosador ;
+
 {$R *.lfm}
+
 
 { TfConfiguracao }
 
+Function TfConfiguracao.TestarConteudo(VolReceita : Integer ; VolMaximo : Integer ; ObjDesc : TObject ; ObjFoco : TObject): string;
+Begin
+  If VolReceita > VolMaximo Then
+   Begin
+    ShowMessage('Quantidade informada é superior ao volume máximo contido em ' + TDbEdit(ObjDesc).Caption) ;
+    TDbEdit(ObjFoco).SetFocus;
+   end;
+
+End;
+
 procedure TfConfiguracao.GroupBox1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TfConfiguracao.GroupBox2Click(Sender: TObject);
 begin
 
 end;
@@ -114,6 +169,125 @@ begin
      SelectNext(ActiveControl as TWinControl,True,True);
      key:=#0;
     end;
+end;
+
+procedure TfConfiguracao.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TfConfiguracao.FormActivate(Sender: TObject);
+begin
+
+  DbEdit1.SetFocus ;
+
+  Edit1.Text := Dm.TCAGSNomeCAG1.AsString ;
+  Edit3.Text := Dm.TCAGSNomeCAG2.AsString ;
+  Edit4.Text := Dm.TCAGSNomeCAG3.AsString ;
+  Edit5.Text := Dm.TCAGSNomeCAG4.AsString ;
+
+  Edit2.Text := Dm.TCAGSNomeCAG1.AsString ;
+  Edit6.Text := Dm.TCAGSNomeCAG2.AsString ;
+  Edit7.Text := Dm.TCAGSNomeCAG3.AsString ;
+  Edit8.Text := Dm.TCAGSNomeCAG4.AsString ;
+
+  Edit9.Text  := Dm.TCAGSNomeCAG1.AsString ;
+  Edit10.Text := Dm.TCAGSNomeCAG2.AsString ;
+  Edit11.Text := Dm.TCAGSNomeCAG3.AsString ;
+  Edit12.Text := Dm.TCAGSNomeCAG4.AsString ;
+
+  Edit13.Text := Dm.TCAGSNomeCAG1.AsString ;
+  Edit14.Text := Dm.TCAGSNomeCAG2.AsString ;
+  Edit15.Text := Dm.TCAGSNomeCAG3.AsString ;
+  Edit16.Text := Dm.TCAGSNomeCAG4.AsString ;
+
+end;
+
+procedure TfConfiguracao.DBEdit17Exit(Sender: TObject);
+begin
+ TestarConteudo(StrToInt(DbEdit17.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit17) ;
+end;
+
+procedure TfConfiguracao.DBEdit18Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit18.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit18) ;
+end;
+
+procedure TfConfiguracao.DBEdit19Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit19.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit19) ;
+end;
+
+procedure TfConfiguracao.DBEdit20Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit20.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit20) ;
+end;
+
+procedure TfConfiguracao.DBEdit21Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit21.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit21) ;
+end;
+
+procedure TfConfiguracao.DBEdit22Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit22.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit22) ;
+end;
+
+procedure TfConfiguracao.DBEdit23Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit23.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit23) ;
+end;
+
+procedure TfConfiguracao.DBEdit24Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit24.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit24) ;
+end;
+
+procedure TfConfiguracao.DBEdit25Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit25.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit25) ;
+end;
+
+procedure TfConfiguracao.DBEdit26Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit26.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit26) ;
+end;
+
+procedure TfConfiguracao.DBEdit27Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit27.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit27) ;
+end;
+
+procedure TfConfiguracao.DBEdit28Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit28.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit28) ;
+end;
+
+procedure TfConfiguracao.DBEdit29Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit29.Text), StrToInt(DbEdit7.Text), DbEdit1, DbEdit29) ;
+end;
+
+procedure TfConfiguracao.DBEdit30Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit30.Text), StrToInt(DbEdit10.Text), DbEdit2, DbEdit30) ;
+end;
+
+procedure TfConfiguracao.DBEdit31Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit31.Text), StrToInt(DbEdit13.Text), DbEdit3, DbEdit31) ;
+end;
+
+procedure TfConfiguracao.DBEdit32Exit(Sender: TObject);
+begin
+  TestarConteudo(StrToInt(DbEdit32.Text), StrToInt(DbEdit16.Text), DbEdit4, DbEdit32) ;
+end;
+
+procedure TfConfiguracao.FormClose(Sender: TObject;
+  var CloseAction: TCloseAction);
+begin
+  //Dm.TCAGS.Post ;
+  fPrincipal.OnActivate(Self);
 end;
 
 end.
