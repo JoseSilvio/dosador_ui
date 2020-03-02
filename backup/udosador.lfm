@@ -1,21 +1,22 @@
 object fPrincipal: TfPrincipal
-  Left = 87
+  Left = 2
   Height = 538
-  Top = 101
-  Width = 1218
-  BorderIcons = [biSystemMenu, biMinimize]
+  Top = 96
+  Width = 1022
+  BorderIcons = []
+  BorderStyle = bsSizeToolWin
   Caption = 'Recife Mecatron - Dosador de Líquidos'
   ClientHeight = 538
-  ClientWidth = 1218
+  ClientWidth = 1022
   OnActivate = FormActivate
   OnCreate = FormCreate
   Position = poDesktopCenter
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.0.0.4'
   object Panel1: TPanel
     Left = 0
     Height = 56
     Top = 0
-    Width = 1218
+    Width = 1022
     Align = alTop
     Caption = 'Recife Mecatron'
     Color = clGradientActiveCaption
@@ -35,10 +36,10 @@ object fPrincipal: TfPrincipal
     Left = 8
     Height = 391
     Top = 80
-    Width = 225
+    Width = 185
     Caption = 'CAG 1'
-    ClientHeight = 356
-    ClientWidth = 221
+    ClientHeight = 365
+    ClientWidth = 183
     Color = clGradientActiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -50,7 +51,7 @@ object fPrincipal: TfPrincipal
     ParentFont = False
     TabOrder = 1
     object btnLiq1_doseA: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
       Top = 40
       Width = 169
@@ -455,9 +456,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 137
+      Top = 136
       Width = 169
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
@@ -860,9 +861,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 233
+      Top = 234
       Width = 169
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
@@ -1266,13 +1267,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpLiquido2: TGroupBox
-    Left = 240
+    Left = 200
     Height = 392
     Top = 80
-    Width = 225
+    Width = 185
     Caption = 'CAG 2'
-    ClientHeight = 357
-    ClientWidth = 221
+    ClientHeight = 366
+    ClientWidth = 183
     Color = clGradientInactiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -1282,7 +1283,7 @@ object fPrincipal: TfPrincipal
     ParentFont = False
     TabOrder = 2
     object btnLiq1_doseA1: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
       Top = 40
       Width = 169
@@ -1687,7 +1688,7 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB1: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
       Top = 138
       Width = 169
@@ -2092,7 +2093,7 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC1: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
       Top = 233
       Width = 169
@@ -2498,13 +2499,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpLiquido3: TGroupBox
-    Left = 472
+    Left = 392
     Height = 392
-    Top = 80
-    Width = 225
+    Top = 81
+    Width = 184
     Caption = 'CAG 3'
-    ClientHeight = 357
-    ClientWidth = 221
+    ClientHeight = 366
+    ClientWidth = 182
     Color = clGradientActiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -2514,9 +2515,9 @@ object fPrincipal: TfPrincipal
     ParentFont = False
     TabOrder = 3
     object btnLiq1_doseA2: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
-      Top = 40
+      Top = 39
       Width = 169
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
@@ -2919,9 +2920,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB2: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
-      Top = 137
+      Top = 135
       Width = 169
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
@@ -3324,9 +3325,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC2: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 233
+      Top = 232
       Width = 169
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
@@ -3730,13 +3731,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpLiquido4: TGroupBox
-    Left = 704
+    Left = 584
     Height = 391
-    Top = 81
-    Width = 225
+    Top = 80
+    Width = 185
     Caption = 'CAG 4'
-    ClientHeight = 356
-    ClientWidth = 221
+    ClientHeight = 365
+    ClientWidth = 183
     Color = clGradientInactiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -3746,7 +3747,7 @@ object fPrincipal: TfPrincipal
     ParentFont = False
     TabOrder = 4
     object btnLiq1_doseA3: TBitBtn
-      Left = 24
+      Left = 8
       Height = 88
       Top = 40
       Width = 169
@@ -4151,7 +4152,7 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB3: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
       Top = 135
       Width = 169
@@ -4556,9 +4557,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC3: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 233
+      Top = 230
       Width = 169
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
@@ -4962,13 +4963,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpReceitas: TGroupBox
-    Left = 936
+    Left = 776
     Height = 391
     Top = 80
-    Width = 272
+    Width = 231
     Caption = '  Receitas    '
-    ClientHeight = 356
-    ClientWidth = 268
+    ClientHeight = 365
+    ClientWidth = 229
     Color = clGradientActiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -4978,10 +4979,10 @@ object fPrincipal: TfPrincipal
     ParentFont = False
     TabOrder = 5
     object btnLiq1_doseA4: TBitBtn
-      Left = 2
+      Left = 3
       Height = 90
       Top = 41
-      Width = 264
+      Width = 221
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -5384,10 +5385,10 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB4: TBitBtn
-      Left = 2
+      Left = 3
       Height = 90
       Top = 136
-      Width = 264
+      Width = 221
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clOlive
@@ -5789,10 +5790,10 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC4: TBitBtn
-      Left = 2
+      Left = 3
       Height = 86
       Top = 233
-      Width = 264
+      Width = 221
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clTeal
