@@ -1,11 +1,11 @@
 object fConfiguracao: TfConfiguracao
-  Left = 207
-  Height = 372
-  Top = 189
+  Left = 276
+  Height = 425
+  Top = 261
   Width = 1080
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Configuração Geral'
-  ClientHeight = 372
+  ClientHeight = 425
   ClientWidth = 1080
   KeyPreview = True
   OnActivate = FormActivate
@@ -68,6 +68,102 @@ object fConfiguracao: TfConfiguracao
       TabOrder = 3
       Text = 'EDIT20'
     end
+    object Edit21: TEdit
+      Left = 6
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 4
+      Text = 'Edit21'
+    end
+    object Edit22: TEdit
+      Left = 96
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 5
+      Text = 'Edit22'
+    end
+    object Edit23: TEdit
+      Left = 184
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 6
+      Text = 'Edit23'
+    end
+    object Edit24: TEdit
+      Left = 271
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 7
+      Text = 'Edit24'
+    end
+    object Edit25: TEdit
+      Left = 360
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 8
+      Text = 'Edit25'
+    end
+    object Edit26: TEdit
+      Left = 448
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 9
+      Text = 'Edit26'
+    end
+    object Edit27: TEdit
+      Left = 534
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 10
+      Text = 'Edit27'
+    end
+    object Edit28: TEdit
+      Left = 624
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 11
+      Text = 'Edit28'
+    end
+    object Edit29: TEdit
+      Left = 709
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 12
+      Text = 'Edit29'
+    end
+    object Edit30: TEdit
+      Left = 798
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 13
+      Text = 'Edit30'
+    end
+    object Edit31: TEdit
+      Left = 888
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 14
+      Text = 'Edit31'
+    end
+    object Edit32: TEdit
+      Left = 976
+      Height = 23
+      Top = 80
+      Width = 80
+      TabOrder = 15
+      Text = 'Edit32'
+    end
   end
   object Label2: TLabel
     Left = 278
@@ -93,18 +189,6 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Descrição do CAG 4'
     ParentColor = False
   end
-  object DBEdit5: TDBEdit
-    Left = 16
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG1Botao1'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 1
-  end
   object Label5: TLabel
     Left = 16
     Height = 15
@@ -121,18 +205,6 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Vol. Botão 2'
     ParentColor = False
   end
-  object DBEdit6: TDBEdit
-    Left = 104
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG1Botao2'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 2
-  end
   object Label7: TLabel
     Left = 192
     Height = 15
@@ -140,18 +212,6 @@ object fConfiguracao: TfConfiguracao
     Width = 62
     Caption = 'Vol. Botão 3'
     ParentColor = False
-  end
-  object DBEdit7: TDBEdit
-    Left = 192
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG1Botao3'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 3
   end
   object Label8: TLabel
     Left = 278
@@ -161,18 +221,6 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Vol. Botão 1'
     ParentColor = False
   end
-  object DBEdit8: TDBEdit
-    Left = 278
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG2Botao1'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 4
-  end
   object Label9: TLabel
     Left = 366
     Height = 15
@@ -180,18 +228,6 @@ object fConfiguracao: TfConfiguracao
     Width = 62
     Caption = 'Vol. Botão 2'
     ParentColor = False
-  end
-  object DBEdit9: TDBEdit
-    Left = 366
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG2Botao2'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 5
   end
   object Label10: TLabel
     Left = 454
@@ -201,18 +237,6 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Vol. Botão 3'
     ParentColor = False
   end
-  object DBEdit10: TDBEdit
-    Left = 454
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG2Botao3'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 6
-  end
   object Label11: TLabel
     Left = 543
     Height = 15
@@ -221,37 +245,13 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Vol. Botão 1'
     ParentColor = False
   end
-  object DBEdit11: TDBEdit
-    Left = 543
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG3Botao1'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 7
-  end
   object Label12: TLabel
-    Left = 543
+    Left = 632
     Height = 15
     Top = 80
     Width = 62
     Caption = 'Vol. Botão 2'
     ParentColor = False
-  end
-  object DBEdit12: TDBEdit
-    Left = 631
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG3Botao2'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 8
   end
   object Label13: TLabel
     Left = 719
@@ -261,18 +261,6 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Vol. Botão 3'
     ParentColor = False
   end
-  object DBEdit13: TDBEdit
-    Left = 719
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG3Botao3'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 9
-  end
   object Label14: TLabel
     Left = 810
     Height = 15
@@ -280,18 +268,6 @@ object fConfiguracao: TfConfiguracao
     Width = 62
     Caption = 'Vol. Botão 1'
     ParentColor = False
-  end
-  object DBEdit14: TDBEdit
-    Left = 810
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG4Botao1'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 10
   end
   object Label15: TLabel
     Left = 898
@@ -301,18 +277,6 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Vol. Botão 2'
     ParentColor = False
   end
-  object DBEdit15: TDBEdit
-    Left = 898
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG4Botao2'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 11
-  end
   object Label16: TLabel
     Left = 986
     Height = 15
@@ -321,27 +285,15 @@ object fConfiguracao: TfConfiguracao
     Caption = 'Vol. Botão 3'
     ParentColor = False
   end
-  object DBEdit16: TDBEdit
-    Left = 986
-    Height = 23
-    Top = 96
-    Width = 79
-    DataField = 'ContCAG4Botao3'
-    DataSource = Dm.DSCAGS
-    Alignment = taRightJustify
-    CharCase = ecUppercase
-    MaxLength = 0
-    TabOrder = 12
-  end
   object GroupBox2: TGroupBox
     Left = 8
-    Height = 232
+    Height = 280
     Top = 136
     Width = 1064
     Caption = '  Configuração das Receitas     '
-    ClientHeight = 212
+    ClientHeight = 260
     ClientWidth = 1060
-    TabOrder = 13
+    TabOrder = 1
     OnClick = GroupBox2Click
     object Edit1: TEdit
       Left = 8
@@ -393,19 +345,6 @@ object fConfiguracao: TfConfiguracao
       ParentColor = False
       ParentFont = False
     end
-    object DBEdit17: TDBEdit
-      Left = 219
-      Height = 23
-      Top = 32
-      Width = 48
-      DataField = 'Receita1CAG1Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 1
-      OnExit = DBEdit17Exit
-    end
     object Edit2: TEdit
       Left = 271
       Height = 23
@@ -421,21 +360,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 8
+      TabOrder = 4
       Text = 'EDIT2'
-    end
-    object DBEdit21: TDBEdit
-      Left = 480
-      Height = 23
-      Top = 32
-      Width = 48
-      DataField = 'Receita2CAG1Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 9
-      OnExit = DBEdit21Exit
     end
     object Edit9: TEdit
       Left = 537
@@ -452,21 +378,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 18
+      TabOrder = 8
       Text = 'EDIT9'
-    end
-    object DBEdit25: TDBEdit
-      Left = 744
-      Height = 23
-      Top = 32
-      Width = 48
-      DataField = 'Receita3CAG1Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 19
-      OnExit = DBEdit25Exit
     end
     object Edit3: TEdit
       Left = 8
@@ -483,21 +396,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 2
+      TabOrder = 1
       Text = 'EDIT3'
-    end
-    object DBEdit18: TDBEdit
-      Left = 219
-      Height = 23
-      Top = 64
-      Width = 48
-      DataField = 'Receita1CAG2Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 3
-      OnExit = DBEdit18Exit
     end
     object Edit6: TEdit
       Left = 271
@@ -514,21 +414,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 10
+      TabOrder = 5
       Text = 'EDIT6'
-    end
-    object DBEdit22: TDBEdit
-      Left = 480
-      Height = 23
-      Top = 64
-      Width = 48
-      DataField = 'Receita2CAG2Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 11
-      OnExit = DBEdit22Exit
     end
     object Edit10: TEdit
       Left = 537
@@ -545,21 +432,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 20
+      TabOrder = 9
       Text = 'EDIT10'
-    end
-    object DBEdit26: TDBEdit
-      Left = 744
-      Height = 23
-      Top = 64
-      Width = 48
-      DataField = 'Receita3CAG2Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 21
-      OnExit = DBEdit26Exit
     end
     object Edit4: TEdit
       Left = 10
@@ -576,21 +450,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 4
+      TabOrder = 2
       Text = 'EDIT4'
-    end
-    object DBEdit19: TDBEdit
-      Left = 219
-      Height = 23
-      Top = 96
-      Width = 48
-      DataField = 'Receita1CAG3Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 5
-      OnExit = DBEdit19Exit
     end
     object Edit7: TEdit
       Left = 272
@@ -607,21 +468,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 12
+      TabOrder = 6
       Text = 'EDIT7'
-    end
-    object DBEdit23: TDBEdit
-      Left = 480
-      Height = 23
-      Top = 98
-      Width = 48
-      DataField = 'Receita2CAG3Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 13
-      OnExit = DBEdit23Exit
     end
     object Edit11: TEdit
       Left = 536
@@ -638,21 +486,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 22
+      TabOrder = 10
       Text = 'EDIT11'
-    end
-    object DBEdit27: TDBEdit
-      Left = 744
-      Height = 23
-      Top = 98
-      Width = 48
-      DataField = 'Receita3CAG3Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 23
-      OnExit = DBEdit27Exit
     end
     object Edit5: TEdit
       Left = 10
@@ -669,21 +504,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 6
+      TabOrder = 3
       Text = 'EDIT5'
-    end
-    object DBEdit20: TDBEdit
-      Left = 219
-      Height = 23
-      Top = 128
-      Width = 48
-      DataField = 'Receita1CAG4Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 7
-      OnExit = DBEdit20Exit
     end
     object Edit8: TEdit
       Left = 271
@@ -700,21 +522,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 14
+      TabOrder = 7
       Text = 'EDIT8'
-    end
-    object DBEdit24: TDBEdit
-      Left = 480
-      Height = 23
-      Top = 128
-      Width = 48
-      DataField = 'Receita2CAG4Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 15
-      OnExit = DBEdit24Exit
     end
     object Edit12: TEdit
       Left = 535
@@ -731,96 +540,8 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 24
+      TabOrder = 11
       Text = 'EDIT12'
-    end
-    object DBEdit28: TDBEdit
-      Left = 744
-      Height = 23
-      Top = 128
-      Width = 48
-      DataField = 'Receita3CAG4Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 25
-      OnExit = DBEdit28Exit
-    end
-    object DBEdit29: TDBEdit
-      Left = 10
-      Height = 23
-      Top = 176
-      Width = 206
-      DataField = 'NomeReceitaB1'
-      DataSource = Dm.DSCAGS
-      CharCase = ecUppercase
-      MaxLength = 0
-      TabOrder = 28
-      OnExit = DBEdit20Exit
-    end
-    object DBEdit30: TDBEdit
-      Left = 219
-      Height = 23
-      Top = 176
-      Width = 48
-      DataField = 'ContReceitaB1'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 29
-      OnExit = DBEdit20Exit
-    end
-    object DBEdit31: TDBEdit
-      Left = 272
-      Height = 23
-      Top = 176
-      Width = 206
-      DataField = 'NomeReceitaB2'
-      DataSource = Dm.DSCAGS
-      CharCase = ecUppercase
-      MaxLength = 0
-      TabOrder = 16
-      OnExit = DBEdit20Exit
-    end
-    object DBEdit32: TDBEdit
-      Left = 480
-      Height = 23
-      Top = 176
-      Width = 48
-      DataField = 'ContReceitaB2'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 17
-      OnExit = DBEdit20Exit
-    end
-    object DBEdit33: TDBEdit
-      Left = 535
-      Height = 23
-      Top = 176
-      Width = 206
-      DataField = 'NomeReceitaB3'
-      DataSource = Dm.DSCAGS
-      CharCase = ecUppercase
-      MaxLength = 0
-      TabOrder = 26
-      OnExit = DBEdit20Exit
-    end
-    object DBEdit34: TDBEdit
-      Left = 744
-      Height = 23
-      Top = 176
-      Width = 48
-      DataField = 'ContReceitaB3'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 27
-      OnExit = DBEdit20Exit
     end
     object Label25: TLabel
       Left = 8
@@ -1029,7 +750,7 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 30
+      TabOrder = 12
       Text = 'EDIT13'
     end
     object Edit14: TEdit
@@ -1047,7 +768,7 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 31
+      TabOrder = 13
       Text = 'EDIT14'
     end
     object Edit15: TEdit
@@ -1065,7 +786,7 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 32
+      TabOrder = 14
       Text = 'EDIT15'
     end
     object Edit16: TEdit
@@ -1083,101 +804,193 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 33
+      TabOrder = 15
       Text = 'EDIT16'
     end
-    object DBEdit35: TDBEdit
+    object Edit33: TEdit
+      Left = 219
+      Height = 23
+      Top = 32
+      Width = 48
+      TabOrder = 16
+      Text = 'Edit33'
+    end
+    object Edit34: TEdit
+      Left = 219
+      Height = 23
+      Top = 64
+      Width = 48
+      TabOrder = 17
+      Text = 'Edit34'
+    end
+    object Edit35: TEdit
+      Left = 219
+      Height = 23
+      Top = 96
+      Width = 48
+      TabOrder = 18
+      Text = 'Edit35'
+    end
+    object Edit36: TEdit
+      Left = 219
+      Height = 23
+      Top = 128
+      Width = 48
+      TabOrder = 19
+      Text = 'Edit36'
+    end
+    object Edit37: TEdit
+      Left = 480
+      Height = 23
+      Top = 32
+      Width = 48
+      TabOrder = 20
+      Text = 'Edit37'
+    end
+    object Edit38: TEdit
+      Left = 480
+      Height = 23
+      Top = 64
+      Width = 48
+      TabOrder = 21
+      Text = 'Edit38'
+    end
+    object Edit39: TEdit
+      Left = 480
+      Height = 23
+      Top = 96
+      Width = 48
+      TabOrder = 22
+      Text = 'Edit39'
+    end
+    object Edit40: TEdit
+      Left = 480
+      Height = 23
+      Top = 128
+      Width = 48
+      TabOrder = 23
+      Text = 'Edit40'
+    end
+    object Edit41: TEdit
+      Left = 744
+      Height = 23
+      Top = 32
+      Width = 48
+      TabOrder = 24
+      Text = 'Edit41'
+    end
+    object Edit42: TEdit
+      Left = 744
+      Height = 23
+      Top = 64
+      Width = 48
+      TabOrder = 25
+      Text = 'Edit42'
+    end
+    object Edit43: TEdit
+      Left = 744
+      Height = 23
+      Top = 96
+      Width = 48
+      TabOrder = 26
+      Text = 'Edit43'
+    end
+    object Edit44: TEdit
+      Left = 744
+      Height = 23
+      Top = 128
+      Width = 48
+      TabOrder = 27
+      Text = 'Edit44'
+    end
+    object Edit45: TEdit
       Left = 1008
       Height = 23
       Top = 32
       Width = 48
-      DataField = 'Receita4CAG1Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 34
-      OnExit = DBEdit25Exit
+      TabOrder = 28
+      Text = 'Edit45'
     end
-    object DBEdit36: TDBEdit
+    object Edit46: TEdit
       Left = 1008
       Height = 23
       Top = 64
       Width = 48
-      DataField = 'Receita4CAG2Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 35
-      OnExit = DBEdit26Exit
+      TabOrder = 29
+      Text = 'Edit46'
     end
-    object DBEdit37: TDBEdit
+    object Edit47: TEdit
       Left = 1008
       Height = 23
-      Top = 98
+      Top = 96
       Width = 48
-      DataField = 'Receita4CAG3Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 36
-      OnExit = DBEdit27Exit
+      TabOrder = 30
+      Text = 'Edit47'
     end
-    object DBEdit38: TDBEdit
-      Left = 1008
+    object Edit48: TEdit
+      Left = 1006
       Height = 23
       Top = 128
       Width = 48
-      DataField = 'Receita4CAG4Ml'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 37
-      OnExit = DBEdit28Exit
+      TabOrder = 31
+      Text = 'Edit48'
     end
-    object Label31: TLabel
-      Left = 798
-      Height = 15
-      Top = 160
-      Width = 178
-      Caption = 'Descrição da Receita no Botão 4'
-      Font.CharSet = ANSI_CHARSET
-      Font.Color = clBlack
-      Font.Height = -12
-      Font.Name = 'Segoe UI'
-      Font.Pitch = fpVariable
-      Font.Quality = fqDraft
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-    end
-    object DBEdit39: TDBEdit
-      Left = 798
+    object Edit49: TEdit
+      Left = 10
       Height = 23
       Top = 176
-      Width = 206
-      DataField = 'NomeReceitaB4'
-      DataSource = Dm.DSCAGS
-      CharCase = ecUppercase
-      MaxLength = 0
-      TabOrder = 38
-      OnExit = DBEdit20Exit
+      Width = 205
+      TabOrder = 32
+      Text = 'Edit49'
     end
-    object DBEdit40: TDBEdit
+    object Edit50: TEdit
+      Left = 219
+      Height = 23
+      Top = 176
+      Width = 48
+      TabOrder = 33
+      Text = 'Edit50'
+    end
+    object Edit51: TEdit
+      Left = 272
+      Height = 23
+      Top = 176
+      Width = 205
+      TabOrder = 34
+      Text = 'Edit51'
+    end
+    object Edit52: TEdit
+      Left = 480
+      Height = 23
+      Top = 176
+      Width = 48
+      TabOrder = 35
+      Text = 'Edit52'
+    end
+    object Edit53: TEdit
+      Left = 537
+      Height = 23
+      Top = 176
+      Width = 205
+      TabOrder = 36
+      Text = 'Edit53'
+    end
+    object Edit54: TEdit
+      Left = 744
+      Height = 23
+      Top = 176
+      Width = 48
+      TabOrder = 37
+      Text = 'Edit54'
+    end
+    object Edit56: TEdit
       Left = 1008
       Height = 23
       Top = 176
       Width = 48
-      DataField = 'ContReceitaB4'
-      DataSource = Dm.DSCAGS
-      Alignment = taRightJustify
-      CharCase = ecNormal
-      MaxLength = 0
-      TabOrder = 39
-      OnExit = DBEdit20Exit
+      TabOrder = 38
+      Text = 'Edit56'
+      Visible = False
     end
     object Label32: TLabel
       Left = 1008
@@ -1194,6 +1007,57 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentColor = False
       ParentFont = False
+      Visible = False
+    end
+    object Edit55: TEdit
+      Left = 800
+      Height = 23
+      Top = 176
+      Width = 205
+      TabOrder = 39
+      Text = 'Edit55'
+      Visible = False
+    end
+    object Label31: TLabel
+      Left = 798
+      Height = 15
+      Top = 160
+      Width = 178
+      Caption = 'Descrição da Receita no Botão 4'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Visible = False
+    end
+    object Label33: TLabel
+      Left = 10
+      Height = 15
+      Top = 208
+      Width = 71
+      Caption = 'IP Para Envio'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit57: TEdit
+      Left = 10
+      Height = 23
+      Top = 224
+      Width = 205
+      TabOrder = 40
+      Text = 'Edit57'
     end
   end
 end

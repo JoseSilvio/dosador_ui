@@ -1,7 +1,7 @@
 object fPrincipal: TfPrincipal
-  Left = 87
+  Left = 44
   Height = 538
-  Top = 101
+  Top = 329
   Width = 1218
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Recife Mecatron - Dosador de Líquidos'

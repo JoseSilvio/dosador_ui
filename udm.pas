@@ -5,8 +5,7 @@ unit uDM;
 interface
 
 uses
-  Classes, SysUtils, db, dbf, ZConnection, ZDataset, IniFiles, Windows,
-  Messages, Variants, Graphics, Controls, Forms, Dialogs, ExtCtrls, ComCtrls,
+  Classes, SysUtils, db, dbf, IniFiles, Messages, Variants, Graphics, Controls, Forms, Dialogs, ExtCtrls, ComCtrls,
   Menus, Buttons, StdCtrls, Grids, DBGrids, IdBaseComponent, IdComponent,
   IdIPWatch ;
 
@@ -15,9 +14,8 @@ type
   { TDm }
 
   TDm = class(TDataModule)
-    Conexao: TZConnection;
-    DSSQLCAGS: TDataSource;
-    DSCAGS: TDataSource;
+    DataSource1: TDataSource;
+    Dbf1: TDbf;
     TCAGSContCAG1Botao1: TLongintField;
     TCAGSContCAG1Botao2: TLongintField;
     TCAGSContCAG1Botao3: TLongintField;
@@ -59,7 +57,6 @@ type
     TCAGSReceita4CAG2Ml: TLongintField;
     TCAGSReceita4CAG3Ml: TLongintField;
     TCAGSReceita4CAG4Ml: TLongintField;
-    TSQLCAGS: TZQuery;
     TSQLCAGSContCAG1Botao1: TLongintField;
     TSQLCAGSContCAG1Botao2: TLongintField;
     TSQLCAGSContCAG1Botao3: TLongintField;
@@ -158,8 +155,8 @@ Function TDm.LerTexto(Campo : String) : String ;
 var
   Ini: TIniFile ;
 begin
-  Ini := TIniFile.Create( ChangeFileExt( Application.ExeName, '.INI' ) );
-  try
+  Ini := TIniFile.Create( ChangeFileExt( Application.ExeName, '.Ini' ) );
+ try
     RESULT  := Ini.ReadSTRING( 'CONFIG', CAMPO,  '' );
   finally
     Ini.Free;
@@ -172,8 +169,14 @@ end;
 procedure TDm.DataModuleCreate(Sender: TObject);
 
 begin
+  // NomeCAG1  := 'silvio';
+  // showmessage('antes ' + nomecag1);
   IpLink         := LerTexto('IpLink');
+
+  //showmessage('dm.....' + iplink);
   NomeCAG1       := LerTexto('NomeCAG1') ;
+
+ // showmessage('depois ' + nomecag1);
   NomeCAG2       := LerTexto('NomeCAG2') ;
   NomeCAG3       := LerTexto('NomeCAG3') ;
   NomeCAG4       := LerTexto('NomeCAG4') ;
