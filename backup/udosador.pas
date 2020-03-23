@@ -78,6 +78,23 @@ implementation
 function TFPrincipal.ConverteVolume(Vol : Double) : String ;
 Begin
  Vol    := Vol * 0.1 ;
+ If Vol = 15 Then // 150 ml
+   Vol := Vol + 1 ;
+ If Vol = 20 Then // 200 ml
+   Vol := Vol + 2;
+ If Vol = 25 Then // 250 ml
+   Vol := Vol + 3;
+ If Vol = 30 Then // 300 ml
+   Vol := Vol + 5;
+ If Vol = 35 Then // 350 ml
+   Vol := Vol + 5;
+ If Vol = 40 Then // 400 ml
+   Vol := Vol + 7;
+ If Vol = 45 Then // 450 ml
+   Vol := Vol + 7;
+ If Vol = 50 Then // 500 ml
+   Vol := Vol + 9;
+
  Result := CurrToStr(Vol) ;
 end;
 
@@ -133,6 +150,7 @@ end;
 procedure TfPrincipal.btnLiq1_doseA1Click(Sender: TObject);
 begin
   // CAG 2 BOTAO 1
+ showmessage(ConverteVolume(StrToCurr(Dm.ContCAG1Botao1)));
   EnviarComandoDosador('http://' + Dm.IpLink + '/cag2' + Link + ConverteVolume(StrToCurr(Dm.ContCAG2Botao1)));
 end;
 
@@ -163,7 +181,7 @@ end;
 procedure TfPrincipal.btnLiq1_doseAClick(Sender: TObject);
 begin
  // CAG1 BOTAO 1
- Showmessage(ConverteVolume(StrToCurr(Dm.ContCAG1Botao1)));
+ showmessage(ConverteVolume(StrToCurr(Dm.ContCAG1Botao1)));
  EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.ContCAG1Botao1)));
 end;
 
@@ -236,14 +254,14 @@ end;
 procedure TfPrincipal.btnLiq1_doseBClick(Sender: TObject);
 begin
   // CAG 1 BOTAO 2
-  Showmessage(ConverteVolume(StrToCurr(Dm.ContCAG1Botao2)));
+  showmessage(ConverteVolume(StrToCurr(Dm.ContCAG1Botao2)));
   EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.ContCAG1Botao2)));
 end;
 
 procedure TfPrincipal.btnLiq1_doseCClick(Sender: TObject);
 begin
   // CAG 1 BOTAO 3
-  Showmessage(ConverteVolume(StrToCurr(Dm.ContCAG1Botao3)));
+  showmessage(ConverteVolume(StrToCurr(Dm.ContCAG1Botao3)));
   EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.ContCAG1Botao3)));
 end;
 
