@@ -1,44 +1,25 @@
 object fPrincipal: TfPrincipal
-  Left = 44
-  Height = 538
-  Top = 329
-  Width = 1218
-  BorderIcons = [biSystemMenu, biMinimize]
+  Left = 166
+  Height = 488
+  Top = 130
+  Width = 1022
+  BorderIcons = []
+  BorderStyle = bsSizeToolWin
   Caption = 'Recife Mecatron - Dosador de Líquidos'
-  ClientHeight = 538
-  ClientWidth = 1218
+  ClientHeight = 488
+  ClientWidth = 1022
   OnActivate = FormActivate
   OnCreate = FormCreate
   Position = poDesktopCenter
   LCLVersion = '2.0.6.0'
-  object Panel1: TPanel
-    Left = 0
-    Height = 56
-    Top = 0
-    Width = 1218
-    Align = alTop
-    Caption = 'Recife Mecatron'
-    Color = clGradientActiveCaption
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clWhite
-    Font.Height = -48
-    Font.Name = 'Segoe UI'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    TabOrder = 0
-    OnClick = Panel1Click
-  end
   object grpLiquido1: TGroupBox
     Left = 8
     Height = 391
-    Top = 80
-    Width = 225
+    Top = 32
+    Width = 185
     Caption = 'CAG 1'
     ClientHeight = 356
-    ClientWidth = 221
+    ClientWidth = 181
     Color = clGradientActiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -48,11 +29,11 @@ object fPrincipal: TfPrincipal
     Font.Quality = fqDraft
     ParentColor = False
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     object btnLiq1_doseA: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 40
+      Top = 39
       Width = 169
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
@@ -450,14 +431,14 @@ object fPrincipal: TfPrincipal
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       }
-      OnClick = hhhh
+      OnClick = btnLiq1_doseAClick
       ParentFont = False
       TabOrder = 0
     end
     object btnLiq1_doseB: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 137
+      Top = 138
       Width = 169
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
@@ -860,9 +841,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 233
+      Top = 240
       Width = 169
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
@@ -1266,13 +1247,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpLiquido2: TGroupBox
-    Left = 240
+    Left = 200
     Height = 392
-    Top = 80
-    Width = 225
+    Top = 31
+    Width = 185
     Caption = 'CAG 2'
     ClientHeight = 357
-    ClientWidth = 221
+    ClientWidth = 181
     Color = clGradientInactiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -1280,11 +1261,11 @@ object fPrincipal: TfPrincipal
     Font.Name = 'Segoe UI'
     ParentColor = False
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
     object btnLiq1_doseA1: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
-      Top = 40
+      Top = 39
       Width = 169
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
@@ -1687,7 +1668,7 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB1: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
       Top = 138
       Width = 169
@@ -2092,9 +2073,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC1: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 233
+      Top = 240
       Width = 169
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
@@ -2498,13 +2479,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpLiquido3: TGroupBox
-    Left = 472
+    Left = 392
     Height = 392
-    Top = 80
-    Width = 225
+    Top = 31
+    Width = 184
     Caption = 'CAG 3'
     ClientHeight = 357
-    ClientWidth = 221
+    ClientWidth = 180
     Color = clGradientActiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -2512,11 +2493,11 @@ object fPrincipal: TfPrincipal
     Font.Name = 'Segoe UI'
     ParentColor = False
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 2
     object btnLiq1_doseA2: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
-      Top = 40
+      Top = 39
       Width = 169
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
@@ -2919,9 +2900,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB2: TBitBtn
-      Left = 26
+      Left = 8
       Height = 89
-      Top = 137
+      Top = 138
       Width = 169
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
@@ -3324,9 +3305,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC2: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 233
+      Top = 240
       Width = 169
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
@@ -3730,13 +3711,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpLiquido4: TGroupBox
-    Left = 704
+    Left = 584
     Height = 391
-    Top = 81
-    Width = 225
+    Top = 32
+    Width = 185
     Caption = 'CAG 4'
     ClientHeight = 356
-    ClientWidth = 221
+    ClientWidth = 181
     Color = clGradientInactiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -3744,11 +3725,11 @@ object fPrincipal: TfPrincipal
     Font.Name = 'Segoe UI'
     ParentColor = False
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
     object btnLiq1_doseA3: TBitBtn
-      Left = 24
-      Height = 88
-      Top = 40
+      Left = 8
+      Height = 89
+      Top = 39
       Width = 169
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
@@ -4151,9 +4132,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB3: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 135
+      Top = 138
       Width = 169
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
@@ -4556,9 +4537,9 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC3: TBitBtn
-      Left = 24
+      Left = 8
       Height = 89
-      Top = 233
+      Top = 240
       Width = 169
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
@@ -4962,13 +4943,13 @@ object fPrincipal: TfPrincipal
     end
   end
   object grpReceitas: TGroupBox
-    Left = 936
+    Left = 776
     Height = 391
-    Top = 80
-    Width = 272
+    Top = 31
+    Width = 231
     Caption = '  Receitas    '
     ClientHeight = 356
-    ClientWidth = 268
+    ClientWidth = 227
     Color = clGradientActiveCaption
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWindowText
@@ -4976,12 +4957,12 @@ object fPrincipal: TfPrincipal
     Font.Name = 'Segoe UI'
     ParentColor = False
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
     object btnLiq1_doseA4: TBitBtn
-      Left = 2
-      Height = 90
-      Top = 41
-      Width = 264
+      Left = 3
+      Height = 89
+      Top = 39
+      Width = 221
       Caption = '80ml'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -5384,10 +5365,10 @@ object fPrincipal: TfPrincipal
       TabOrder = 0
     end
     object btnLiq1_doseB4: TBitBtn
-      Left = 2
-      Height = 90
-      Top = 136
-      Width = 264
+      Left = 3
+      Height = 89
+      Top = 138
+      Width = 221
       Caption = '100ml'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clOlive
@@ -5789,10 +5770,10 @@ object fPrincipal: TfPrincipal
       TabOrder = 1
     end
     object btnLiq1_doseC4: TBitBtn
-      Left = 2
-      Height = 86
-      Top = 233
-      Width = 264
+      Left = 3
+      Height = 89
+      Top = 240
+      Width = 221
       Caption = '200ml'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clTeal
@@ -6197,7 +6178,7 @@ object fPrincipal: TfPrincipal
   object SpeedButton1: TSpeedButton
     Left = 8
     Height = 43
-    Top = 480
+    Top = 432
     Width = 279
     Caption = '&Configuração Geral'
     Glyph.Data = {
@@ -6320,5 +6301,13 @@ object fPrincipal: TfPrincipal
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
     }
     OnClick = SpeedButton1Click
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 0
+    Width = 1000
+    TabOrder = 5
+    Text = 'Edit1'
   end
 end

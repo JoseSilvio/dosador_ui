@@ -1,7 +1,7 @@
 object fConfiguracao: TfConfiguracao
-  Left = 7
+  Left = 217
   Height = 448
-  Top = 110
+  Top = 246
   Width = 1004
   Anchors = []
   BorderIcons = [biSystemMenu, biMinimize]
@@ -14,22 +14,22 @@ object fConfiguracao: TfConfiguracao
   OnCreate = FormCreate
   OnKeyPress = FormKeyPress
   Position = poDesktopCenter
-  LCLVersion = '2.0.0.4'
+  LCLVersion = '2.0.6.0'
   object GroupBox1: TGroupBox
     Left = 8
     Height = 129
     Top = 0
     Width = 992
     Caption = '   Configuração dos CAGs    '
-    ClientHeight = 106
-    ClientWidth = 990
+    ClientHeight = 109
+    ClientWidth = 988
     TabOrder = 0
     OnClick = GroupBox1Click
     object Label1: TLabel
       Left = 8
-      Height = 17
+      Height = 16
       Top = 8
-      Width = 145
+      Width = 125
       Caption = 'Descrição do CAG 1'
       Font.Height = -13
       Font.Name = 'Sans'
@@ -39,7 +39,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit17: TEdit
       Left = 6
-      Height = 32
+      Height = 23
       Top = 32
       Width = 245
       CharCase = ecUppercase
@@ -48,7 +48,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit18: TEdit
       Left = 254
-      Height = 32
+      Height = 23
       Top = 32
       Width = 242
       CharCase = ecUppercase
@@ -57,7 +57,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit19: TEdit
       Left = 499
-      Height = 32
+      Height = 23
       Top = 32
       Width = 246
       CharCase = ecUppercase
@@ -66,7 +66,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit20: TEdit
       Left = 748
-      Height = 32
+      Height = 23
       Top = 32
       Width = 238
       CharCase = ecUppercase
@@ -75,7 +75,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit21: TEdit
       Left = 8
-      Height = 32
+      Height = 23
       Top = 72
       Width = 76
       TabOrder = 4
@@ -83,7 +83,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit22: TEdit
       Left = 94
-      Height = 32
+      Height = 23
       Top = 72
       Width = 76
       TabOrder = 5
@@ -91,7 +91,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit23: TEdit
       Left = 175
-      Height = 32
+      Height = 23
       Top = 72
       Width = 76
       TabOrder = 6
@@ -99,7 +99,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit24: TEdit
       Left = 255
-      Height = 32
+      Height = 23
       Top = 72
       Width = 76
       TabOrder = 7
@@ -107,7 +107,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit25: TEdit
       Left = 339
-      Height = 32
+      Height = 23
       Top = 72
       Width = 76
       TabOrder = 8
@@ -115,7 +115,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit26: TEdit
       Left = 420
-      Height = 32
+      Height = 23
       Top = 72
       Width = 76
       TabOrder = 9
@@ -123,7 +123,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit27: TEdit
       Left = 501
-      Height = 32
+      Height = 23
       Top = 72
       Width = 77
       TabOrder = 10
@@ -131,7 +131,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit28: TEdit
       Left = 587
-      Height = 32
+      Height = 23
       Top = 72
       Width = 77
       TabOrder = 11
@@ -139,7 +139,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit29: TEdit
       Left = 670
-      Height = 32
+      Height = 23
       Top = 72
       Width = 77
       TabOrder = 12
@@ -147,7 +147,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit30: TEdit
       Left = 748
-      Height = 32
+      Height = 23
       Top = 72
       Width = 77
       TabOrder = 13
@@ -155,7 +155,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit31: TEdit
       Left = 828
-      Height = 32
+      Height = 23
       Top = 72
       Width = 77
       TabOrder = 14
@@ -163,7 +163,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit32: TEdit
       Left = 907
-      Height = 32
+      Height = 23
       Top = 72
       Width = 77
       TabOrder = 15
@@ -171,9 +171,9 @@ object fConfiguracao: TfConfiguracao
     end
     object Label8: TLabel
       Left = 256
-      Height = 17
+      Height = 16
       Top = 8
-      Width = 145
+      Width = 125
       Caption = 'Descrição do CAG 2'
       Font.Height = -13
       Font.Name = 'Sans'
@@ -183,9 +183,9 @@ object fConfiguracao: TfConfiguracao
     end
     object Label9: TLabel
       Left = 499
-      Height = 17
+      Height = 16
       Top = 8
-      Width = 145
+      Width = 125
       Caption = 'Descrição do CAG 3'
       Font.Height = -13
       Font.Name = 'Sans'
@@ -195,9 +195,9 @@ object fConfiguracao: TfConfiguracao
     end
     object Label11: TLabel
       Left = 752
-      Height = 17
+      Height = 16
       Top = 8
-      Width = 145
+      Width = 125
       Caption = 'Descrição do CAG 4'
       Font.Height = -13
       Font.Name = 'Sans'
@@ -208,73 +208,73 @@ object fConfiguracao: TfConfiguracao
   end
   object Label4: TLabel
     Left = 808
-    Height = 22
+    Height = 15
     Top = 35
-    Width = 140
+    Width = 104
     Caption = 'Descrição do CAG 4'
     ParentColor = False
   end
   object Label5: TLabel
     Left = 16
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 1'
     ParentColor = False
   end
   object Label6: TLabel
     Left = 104
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 2'
     ParentColor = False
   end
   object Label7: TLabel
     Left = 192
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 3'
     ParentColor = False
   end
   object Label10: TLabel
     Left = 454
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 3'
     ParentColor = False
   end
   object Label12: TLabel
     Left = 632
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 2'
     ParentColor = False
   end
   object Label13: TLabel
     Left = 719
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 3'
     ParentColor = False
   end
   object Label14: TLabel
     Left = 810
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 1'
     ParentColor = False
   end
   object Label15: TLabel
     Left = 898
-    Height = 22
+    Height = 15
     Top = 80
-    Width = 86
+    Width = 62
     Caption = 'Vol. Botão 2'
     ParentColor = False
   end
@@ -284,13 +284,13 @@ object fConfiguracao: TfConfiguracao
     Top = 136
     Width = 992
     Caption = '  Configuração das Receitas     '
-    ClientHeight = 281
-    ClientWidth = 990
+    ClientHeight = 284
+    ClientWidth = 988
     TabOrder = 1
     OnClick = GroupBox2Click
     object Edit1: TEdit
       Left = 8
-      Height = 25
+      Height = 23
       Top = 32
       Width = 203
       CharCase = ecUppercase
@@ -310,7 +310,7 @@ object fConfiguracao: TfConfiguracao
       Left = 211
       Height = 15
       Top = 16
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -326,7 +326,7 @@ object fConfiguracao: TfConfiguracao
       Left = 8
       Height = 15
       Top = 16
-      Width = 62
+      Width = 52
       Caption = 'Receita 1'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -340,7 +340,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit2: TEdit
       Left = 252
-      Height = 25
+      Height = 23
       Top = 32
       Width = 203
       CharCase = ecUppercase
@@ -358,7 +358,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit9: TEdit
       Left = 496
-      Height = 25
+      Height = 23
       Top = 32
       Width = 203
       CharCase = ecUppercase
@@ -376,7 +376,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit3: TEdit
       Left = 8
-      Height = 25
+      Height = 23
       Top = 64
       Width = 203
       CharCase = ecUppercase
@@ -394,7 +394,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit6: TEdit
       Left = 253
-      Height = 25
+      Height = 23
       Top = 64
       Width = 203
       CharCase = ecUppercase
@@ -412,7 +412,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit10: TEdit
       Left = 494
-      Height = 25
+      Height = 23
       Top = 64
       Width = 203
       CharCase = ecUppercase
@@ -430,7 +430,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit4: TEdit
       Left = 10
-      Height = 25
+      Height = 23
       Top = 96
       Width = 203
       CharCase = ecUppercase
@@ -448,7 +448,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit7: TEdit
       Left = 252
-      Height = 25
+      Height = 23
       Top = 96
       Width = 203
       CharCase = ecUppercase
@@ -466,7 +466,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit11: TEdit
       Left = 494
-      Height = 25
+      Height = 23
       Top = 98
       Width = 203
       CharCase = ecUppercase
@@ -484,7 +484,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit5: TEdit
       Left = 10
-      Height = 25
+      Height = 23
       Top = 128
       Width = 203
       CharCase = ecUppercase
@@ -502,7 +502,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit8: TEdit
       Left = 253
-      Height = 25
+      Height = 23
       Top = 128
       Width = 203
       CharCase = ecUppercase
@@ -520,7 +520,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit12: TEdit
       Left = 496
-      Height = 25
+      Height = 23
       Top = 128
       Width = 203
       CharCase = ecUppercase
@@ -538,10 +538,10 @@ object fConfiguracao: TfConfiguracao
     end
     object Label25: TLabel
       Left = 8
-      Height = 17
+      Height = 16
       Top = 160
-      Width = 195
-      Caption = 'Descri;''ao Receita Botão 1'
+      Width = 166
+      Caption = 'Descrição Receita Botão 1'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
       Font.Height = -13
@@ -556,7 +556,7 @@ object fConfiguracao: TfConfiguracao
       Left = 219
       Height = 15
       Top = 160
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -567,12 +567,13 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentColor = False
       ParentFont = False
+      Visible = False
     end
     object Label26: TLabel
       Left = 253
       Height = 15
       Top = 160
-      Width = 174
+      Width = 145
       Caption = 'Descrição Receita Botão 2'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -588,7 +589,7 @@ object fConfiguracao: TfConfiguracao
       Left = 458
       Height = 15
       Top = 160
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -599,12 +600,13 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentColor = False
       ParentFont = False
+      Visible = False
     end
     object Label27: TLabel
       Left = 499
       Height = 15
       Top = 160
-      Width = 174
+      Width = 145
       Caption = 'Descrição Receita Botão 3'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -620,7 +622,7 @@ object fConfiguracao: TfConfiguracao
       Left = 699
       Height = 15
       Top = 160
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -631,12 +633,13 @@ object fConfiguracao: TfConfiguracao
       Font.Style = [fsBold]
       ParentColor = False
       ParentFont = False
+      Visible = False
     end
     object Label19: TLabel
       Left = 256
       Height = 15
       Top = 16
-      Width = 62
+      Width = 52
       Caption = 'Receita 2'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -652,7 +655,7 @@ object fConfiguracao: TfConfiguracao
       Left = 458
       Height = 15
       Top = 16
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -668,7 +671,7 @@ object fConfiguracao: TfConfiguracao
       Left = 504
       Height = 15
       Top = 16
-      Width = 62
+      Width = 52
       Caption = 'Receita 3'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -684,7 +687,7 @@ object fConfiguracao: TfConfiguracao
       Left = 699
       Height = 15
       Top = 16
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -700,7 +703,7 @@ object fConfiguracao: TfConfiguracao
       Left = 960
       Height = 15
       Top = 16
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -716,7 +719,7 @@ object fConfiguracao: TfConfiguracao
       Left = 740
       Height = 15
       Top = 16
-      Width = 62
+      Width = 52
       Caption = 'Receita 4'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -730,7 +733,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit13: TEdit
       Left = 740
-      Height = 25
+      Height = 23
       Top = 32
       Width = 203
       CharCase = ecUppercase
@@ -748,7 +751,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit14: TEdit
       Left = 740
-      Height = 25
+      Height = 23
       Top = 64
       Width = 203
       CharCase = ecUppercase
@@ -766,7 +769,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit15: TEdit
       Left = 740
-      Height = 25
+      Height = 23
       Top = 98
       Width = 203
       CharCase = ecUppercase
@@ -784,7 +787,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit16: TEdit
       Left = 740
-      Height = 25
+      Height = 23
       Top = 128
       Width = 203
       CharCase = ecUppercase
@@ -802,7 +805,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit33: TEdit
       Left = 211
-      Height = 32
+      Height = 23
       Top = 32
       Width = 38
       TabOrder = 16
@@ -810,7 +813,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit34: TEdit
       Left = 211
-      Height = 32
+      Height = 23
       Top = 64
       Width = 38
       TabOrder = 17
@@ -818,7 +821,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit35: TEdit
       Left = 213
-      Height = 32
+      Height = 23
       Top = 96
       Width = 38
       TabOrder = 18
@@ -826,7 +829,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit36: TEdit
       Left = 213
-      Height = 32
+      Height = 23
       Top = 128
       Width = 38
       TabOrder = 19
@@ -834,7 +837,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit37: TEdit
       Left = 453
-      Height = 32
+      Height = 23
       Top = 32
       Width = 38
       TabOrder = 20
@@ -842,7 +845,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit38: TEdit
       Left = 453
-      Height = 32
+      Height = 23
       Top = 64
       Width = 38
       TabOrder = 21
@@ -850,7 +853,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit39: TEdit
       Left = 453
-      Height = 32
+      Height = 23
       Top = 96
       Width = 38
       TabOrder = 22
@@ -858,7 +861,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit40: TEdit
       Left = 453
-      Height = 32
+      Height = 23
       Top = 128
       Width = 38
       TabOrder = 23
@@ -866,7 +869,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit41: TEdit
       Left = 699
-      Height = 32
+      Height = 23
       Top = 32
       Width = 38
       TabOrder = 24
@@ -874,7 +877,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit42: TEdit
       Left = 699
-      Height = 32
+      Height = 23
       Top = 64
       Width = 38
       TabOrder = 25
@@ -882,7 +885,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit43: TEdit
       Left = 699
-      Height = 32
+      Height = 23
       Top = 96
       Width = 38
       TabOrder = 26
@@ -890,7 +893,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit44: TEdit
       Left = 699
-      Height = 32
+      Height = 23
       Top = 128
       Width = 38
       TabOrder = 27
@@ -898,7 +901,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit45: TEdit
       Left = 944
-      Height = 32
+      Height = 23
       Top = 32
       Width = 38
       TabOrder = 28
@@ -906,7 +909,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit46: TEdit
       Left = 942
-      Height = 32
+      Height = 23
       Top = 64
       Width = 38
       TabOrder = 29
@@ -914,7 +917,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit47: TEdit
       Left = 942
-      Height = 32
+      Height = 23
       Top = 96
       Width = 38
       TabOrder = 30
@@ -922,7 +925,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit48: TEdit
       Left = 942
-      Height = 32
+      Height = 23
       Top = 128
       Width = 38
       TabOrder = 31
@@ -930,7 +933,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit49: TEdit
       Left = 10
-      Height = 32
+      Height = 23
       Top = 176
       Width = 203
       TabOrder = 32
@@ -938,15 +941,16 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit50: TEdit
       Left = 213
-      Height = 32
+      Height = 23
       Top = 176
       Width = 38
       TabOrder = 33
       Text = 'Edit50'
+      Visible = False
     end
     object Edit51: TEdit
       Left = 252
-      Height = 32
+      Height = 23
       Top = 176
       Width = 203
       TabOrder = 34
@@ -954,15 +958,16 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit52: TEdit
       Left = 453
-      Height = 32
+      Height = 23
       Top = 176
       Width = 38
       TabOrder = 35
       Text = 'Edit52'
+      Visible = False
     end
     object Edit53: TEdit
       Left = 499
-      Height = 32
+      Height = 23
       Top = 176
       Width = 203
       TabOrder = 36
@@ -970,15 +975,16 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit54: TEdit
       Left = 699
-      Height = 32
+      Height = 23
       Top = 176
       Width = 38
       TabOrder = 37
       Text = 'Edit54'
+      Visible = False
     end
     object Edit56: TEdit
       Left = 942
-      Height = 32
+      Height = 23
       Top = 176
       Width = 38
       TabOrder = 38
@@ -989,7 +995,7 @@ object fConfiguracao: TfConfiguracao
       Left = 942
       Height = 15
       Top = 160
-      Width = 20
+      Width = 17
       Caption = 'ML'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -1004,7 +1010,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit55: TEdit
       Left = 740
-      Height = 32
+      Height = 23
       Top = 176
       Width = 203
       TabOrder = 39
@@ -1015,7 +1021,7 @@ object fConfiguracao: TfConfiguracao
       Left = 740
       Height = 15
       Top = 160
-      Width = 174
+      Width = 145
       Caption = 'Descrição Receita Botão 4'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -1032,7 +1038,7 @@ object fConfiguracao: TfConfiguracao
       Left = 10
       Height = 15
       Top = 224
-      Width = 89
+      Width = 71
       Caption = 'IP Para Envio'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -1046,7 +1052,7 @@ object fConfiguracao: TfConfiguracao
     end
     object Edit57: TEdit
       Left = 8
-      Height = 32
+      Height = 23
       Top = 240
       Width = 205
       TabOrder = 40
