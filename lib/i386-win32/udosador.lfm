@@ -6302,12 +6302,4 @@ object fPrincipal: TfPrincipal
     }
     OnClick = SpeedButton1Click
   end
-  object Edit1: TEdit
-    Left = 8
-    Height = 23
-    Top = 0
-    Width = 1000
-    TabOrder = 5
-    Text = 'Edit1'
-  end
 end

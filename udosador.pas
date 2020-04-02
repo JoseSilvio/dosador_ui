@@ -105,15 +105,6 @@ end;
 
 function TFPrincipal.SomarConteudo(Vol1, Vol2, Vol3, Vol4 : String) : String ;
 Begin
- If Vol1 = '' Then
-  Vol1 := '0' ;
- If Vol2 = '' Then
-  Vol2 := '0' ;
- If Vol3 = '' Then
-  Vol3 := '0' ;
- If Vol4 = '' Then
-  Vol4 := '0' ;
-
  Result := IntToStr( StrtoInt(Vol1) + StrtoInt(Vol2) + StrtoInt(Vol3) + StrtoInt(Vol4) ) ;
 end;
 
@@ -220,16 +211,30 @@ procedure TfPrincipal.btnLiq1_doseA4Click(Sender: TObject);
 begin
 
  If Dm.Receita1CAG1Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG1Ml)));
- If Dm.Receita1CAG2Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag2' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG2Ml)));
- If Dm.Receita1CAG3Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag3' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG3Ml)));
- If Dm.Receita2CAG4Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag4' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG4Ml)));
+   Begin
+    EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG1Ml)));
+    Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '1' + '&mililitros=' + Dm.Receita1CAG1Ml ;
+    EnviarDadosDosador(Url) ;
+   End;
 
- Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + btnLiq1_doseA4.Caption + '&mililitros=' + SomarConteudo(Dm.Receita1CAG1Ml,Dm.Receita1CAG2Ml,Dm.Receita1CAG3Ml,Dm.Receita1CAG4Ml) ;
- EnviarDadosDosador(Url) ;
+ If Dm.Receita1CAG2Ml <> '' Then
+   Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag2' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG2Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '2' + '&mililitros=' + Dm.Receita1CAG2Ml ;
+     EnviarDadosDosador(Url) ;
+   end;
+ If Dm.Receita1CAG3Ml <> '' Then
+   Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag3' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG3Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '3' + '&mililitros=' + Dm.Receita1CAG3Ml ;
+     EnviarDadosDosador(Url) ;
+   end;
+ If Dm.Receita2CAG4Ml <> '' Then
+   Begin
+    EnviarComandoDosador('http://' + Dm.IpLink + '/cag4' + Link + ConverteVolume(StrToCurr(Dm.Receita1CAG4Ml)));
+    Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '4' + '&mililitros=' + Dm.Receita1CAG4Ml ;
+    EnviarDadosDosador(Url) ;
+   end;
 end;
 
 procedure TfPrincipal.btnLiq1_doseAClick(Sender: TObject);
@@ -267,16 +272,29 @@ end;
 procedure TfPrincipal.btnLiq1_doseB4Click(Sender: TObject);
 begin
   If Dm.Receita2CAG1Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG1Ml)));
+   Begin
+    EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG1Ml)));
+    Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '1' + '&mililitros=' + Dm.Receita2CAG1Ml ;
+    EnviarDadosDosador(Url) ;
+   end;
   If Dm.Receita2CAG2Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag2' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG2Ml)));
+    Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag2' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG2Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '2' + '&mililitros=' + Dm.Receita2CAG2Ml ;
+     EnviarDadosDosador(Url) ;
+    end;
   If Dm.Receita2CAG3Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag3' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG3Ml)));
+   Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag3' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG3Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '3' + '&mililitros=' + Dm.Receita2CAG3Ml ;
+     EnviarDadosDosador(Url) ;
+   end;
   If Dm.Receita2CAG4Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag4' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG4Ml)));
-
- Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + btnLiq1_doseB4.Caption + '&mililitros=' + SomarConteudo(Dm.Receita2CAG1Ml,Dm.Receita2CAG2Ml,Dm.Receita2CAG3Ml,Dm.Receita2CAG4Ml) ;
- EnviarDadosDosador(Url) ;
+   Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag4' + Link + ConverteVolume(StrToCurr(Dm.Receita2CAG4Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '4' + '&mililitros=' + Dm.Receita2CAG4Ml ;
+     EnviarDadosDosador(Url) ;
+   end;
 end;
 
 procedure TfPrincipal.btnLiq1_doseBContextPopup(Sender: TObject;
@@ -313,16 +331,30 @@ end;
 procedure TfPrincipal.btnLiq1_doseC4Click(Sender: TObject);
 begin
   If Dm.Receita3CAG1Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG1Ml)));
+    Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag1' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG1Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '1' + '&mililitros=' + Dm.Receita3CAG1Ml ;
+     EnviarDadosDosador(Url) ;
+    end;
   If Dm.Receita3CAG2Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag2' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG2Ml)));
+    Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag2' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG2Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '2' + '&mililitros=' + Dm.Receita3CAG2Ml ;
+     EnviarDadosDosador(Url) ;
+    end;
   If Dm.Receita3CAG3Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag3' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG3Ml)));
+   Begin
+    EnviarComandoDosador('http://' + Dm.IpLink + '/cag3' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG3Ml)));
+    Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '3' + '&mililitros=' + Dm.Receita3CAG3Ml ;
+    EnviarDadosDosador(Url) ;
+   end;
   If Dm.Receita3CAG4Ml <> '' Then
-   EnviarComandoDosador('http://' + Dm.IpLink + '/cag4' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG4Ml)));
+    Begin
+     EnviarComandoDosador('http://' + Dm.IpLink + '/cag4' + Link + ConverteVolume(StrToCurr(Dm.Receita3CAG4Ml)));
+     Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + '4' + '&mililitros=' + Dm.Receita3CAG4Ml ;
+     EnviarDadosDosador(Url) ;
+    end;
 
-  Url := UrlEnvio + '?id_dispositivo=' + '1' + '&reservatorio=' + btnLiq1_doseC4.Caption + '&mililitros=' + SomarConteudo(Dm.Receita3CAG1Ml,Dm.Receita3CAG2Ml,Dm.Receita3CAG3Ml,Dm.Receita3CAG4Ml) ;
-  EnviarDadosDosador(Url) ;
 end;
 
 procedure TfPrincipal.btnLiq1_doseBClick(Sender: TObject);
